@@ -23,8 +23,7 @@
 * R拥有一个专门为交互数据分析和统计编程而打造的[IDE](http://www.rstudio.com/ide/).
 
 
+* R拥有强大的元编成架构。R不紧紧是一门编程语言，也是一个交互数据分析的环境。R的元编成能力让你编写魔法般地简洁明了的函数，同时提供一个设计专用领域语言的完美环境。
 
+* R在设计上对像C，Fortran，和C++一类的高性能语言开放接口。
 
-Powerful metaprogramming facilities. R is not just a programming language, it is also an environment for interactive data analysis. Its metaprogramming capabilities allow you to write magically succinct and concise functions and provide an excellent environment for designing domain-specific languages.
-
-Designed to connect to high-performance programming languages like C, Fortran, and C++.
