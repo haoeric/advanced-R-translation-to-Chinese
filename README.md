@@ -38,7 +38,7 @@
 
 * R并不是一门注重运行速度的语言，糟糕的R代码会使得运行速度极其的慢。R语言占用内存也是很严重的。
 
-Personally, I think these challenges create a great opportunity for experienced programmers to have a profound positive impact on R and the R community. R users do care about writing high quality code, particularly for reproducible research, but they don’t yet have the skills to do so. I hope this book will not only help more R users to become R programmers but also encourage programmers from other languages to contribute to R.
+在我个人看来，R当前所遇到的这些挑战对于有经验的程序员来说是一个很大的机会，他们大可以施展拳脚推动R语言和R社区向更完美的方向发展。R用户都很在乎写出高质量的代码，尤其是在做可重复性研究的时候。可是他们缺少相关的知识。我希望本书不仅能帮助更多的R用户提高为R程序员，同时也希望鼓励更多的使用其他语言的专业程序员来为R语言的发展做出贡献。
 
 
 
