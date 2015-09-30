@@ -32,11 +32,13 @@
 
 * 和其他语言相比，R社区讨论的问题更多的集中在问题的结果上而不是注重处理问题的过程。关于软件工程方面的的实践应用算是凑合用的：比如很多的R程序员都不会用源代码控制和自动测试。
 
-* 元编成是一把双刃剑。很多的R函数用一些技巧来减少代码量，然而牺牲了可读性，并且可能导致非预期的结果。
+* 元编程是一把双刃剑。很多的R函数用一些技巧来减少代码量，然而牺牲了可读性，并且可能导致非预期的结果。
 
-* R语言有20多年的进化历史，在发布的不同的R工具包甚至base R中的变量与函数名的不一致性是存在普遍的。这使得学习R语言需要记住不同情况下的不同函数调用，从而加大了学习难度。
+* R语言有20多年的进化历史，在发布的不同的R工具包甚至base R中的变量与函数名的不一致性是普遍存在的。这使得学习R语言需要记住不同情况下的不同函数调用名称，从而加大了学习难度。
 
 * R并不是一门注重运行速度的语言，糟糕的R代码会使得运行速度极其的慢。R语言占用内存也是很严重的。
+
+Personally, I think these challenges create a great opportunity for experienced programmers to have a profound positive impact on R and the R community. R users do care about writing high quality code, particularly for reproducible research, but they don’t yet have the skills to do so. I hope this book will not only help more R users to become R programmers but also encourage programmers from other languages to contribute to R.
 
 
 
