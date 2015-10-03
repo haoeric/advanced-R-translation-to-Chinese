@@ -67,12 +67,13 @@
 
 * 能够轻松的读懂大部分的R代码。你会学到R的一些称用术语（尽管你可能不会用到）并且能够评价他人的代码。
 
-##元技术
+##元技能
 
-There are two meta-techniques that are tremendously helpful for improving your skills as an R programmer: reading source code and adopting a scientific mindset.
+有两种对提高R程序员能力极其有用的元技能：**读源代码**和**科研的心态**。
 
-Reading source code is important because it will help you write better code. A great place to start developing this skill is to look at the source code of the functions and packages you use most often. You’ll find things that are worth emulating in your own code and you’ll develop a sense of taste for what makes good R code. You will also see things that you don’t like, either because its virtues are not obvious or it offends your sensibilities. Such code is nonetheless valuable, because it helps make concrete your opinions on good and bad code.
+读源代码很重要。因为它能帮助你写出更好的代码。发展这个技能最佳的方法是查看你常用的函数和工具包的源代码。你会发现一些值得在你的代码中模仿的技巧并且对好的代码培养欣赏能力。你也会发现一些不好的代码，比如代码的效率不明显，或则违反了你的直觉认识。然而阅读这些不好的代码也是有用的，它会帮助提练你辨别好代码和坏代码的能力。
 
-A scientific mindset is extremely helpful when learning R. If you don’t understand how something works, develop a hypothesis, design some experiments, run them, and record the results. This exercise is extremely useful since if you can’t figure something out and need to get help, you can easily show others what you tried. Also, when you learn the right answer, you’ll be mentally prepared to update your world view. When I clearly describe a problem to someone else (the art of creating a reproducible example), I often figure out the solution myself.
+有一个科研的心态对学习R非常you帮助。如果你不明白一个东西是怎么工作对，提出假设，设计一个实验，运行并且记录报告。这种练习是非常有用的。因为如果你不能够明白某个问题并且需要帮助，你能够很轻松的告诉别人你做了哪些尝试。同时当你理解正确答案的时候，你会在潜意识里更新你的认知。当我仔细的向别人描述我的问题的时候（做可重复性案例的艺术），我经常在描述的过程中自己找到了问题的答案。
+
 
 
