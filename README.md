@@ -45,8 +45,29 @@
 这本书适合以下两类读者：
 
 * 希望更深入探索R并且了解解决不同问题的新方法的R中级程序员。
+
 * 正在学习R并且想要知道R工作原理的其他编程语言的程序员。
 
-为了更好的理解这本书，你需要一定的R语言或其他语言的编程经历。你不需要了解所有R的知识，但你需要知道函数是如何在R中运行的，尽管你可能感觉熟练地驾驭R函数还有些吃力。同时你也应该熟悉apply家族函数的使用方法，比如`apply()`和`lapply()`.
+为了更好的使用这本书，你需要一定的R语言或其他语言的编程经历。你不需要了解所有R的知识，但你需要知道函数是如何在R中运行的，尽管你可能感觉熟练地驾驭R函数还有些吃力。同时你也应该熟悉apply家族函数的使用方法，比如`apply()`和`lapply()`.
+
+
+##你会从本书学到什么
+
+这本书包括了我认为一个高阶的R程序员需要掌握的技能：能写出在不同环境下运行的高质量代码。
+
+读完本书，你讲学到：
+
+* 熟悉R的基本知识。你会理解复杂的数据类型并且知道处理这些数据类型相应的最佳方法。你将对R函数是如何运行的有更深入的理解，并且能够理解和使用R的四种面向对象体系。
+
+* 理解什么是函数式编程，以及它为什么适合于数据分析。你将会快速的掌握如何运用已有的工具，并且能够编写你需要的新工具。
+
+* 了解元编程的双刃剑特性。你将会在规则范围内编写非标准评估的函数来节省代码，并且写出能处理复杂操作的华丽代码。你也会明白运用元编成的风险，并且知道为什么要小心的使用元编成。
+
+
+Appreciate the double-edged sword of metaprogramming. You’ll be able to create functions that use non-standard evaluation in a principled way, saving typing and creating elegant code to express important operations. You’ll also understand the dangers of metaprogramming and why you should be careful about its use.
+
+Have a good intuition for which operations in R are slow or use a lot of memory. You’ll know how to use profiling to pinpoint performance bottlenecks, and you’ll know enough C++ to convert slow R functions to fast C++ equivalents.
+
+Be comfortable reading and understanding the majority of R code. You’ll recognise common idioms (even if you wouldn’t use them yourself) and be able to critique others’ code.
 
 
