@@ -61,13 +61,18 @@
 
 * 理解什么是函数式编程，以及它为什么适合于数据分析。你将会快速的掌握如何运用已有的工具，并且能够编写你需要的新工具。
 
-* 了解元编程的双刃剑特性。你将会在规则范围内编写非标准评估的函数来节省代码，并且写出能处理复杂操作的华丽代码。你也会明白运用元编成的风险，并且知道为什么要小心的使用元编成。
+* 了解元编程的双刃剑特性。你将会在规则范围内编写非标准评估的函数来节省代码，并且写出能处理复杂操作的华丽代码。你也会明白运用元编程的风险，并且知道为什么要小心的使用元编程。
 
+* 能对一切运行缓慢或耗用大量内存的R操作建立直觉的认知。你会知道如何剖析运行过程来准确定位运行代码中的瓶颈之处，并且学习够用的C++知识来将缓慢的R代码转换成快速的C++代码。
 
-Appreciate the double-edged sword of metaprogramming. You’ll be able to create functions that use non-standard evaluation in a principled way, saving typing and creating elegant code to express important operations. You’ll also understand the dangers of metaprogramming and why you should be careful about its use.
+* 能够轻松的读懂大部分的R代码。你会学到R的一些称用术语（尽管你可能不会用到）并且能够评价他人的代码。
 
-Have a good intuition for which operations in R are slow or use a lot of memory. You’ll know how to use profiling to pinpoint performance bottlenecks, and you’ll know enough C++ to convert slow R functions to fast C++ equivalents.
+##元技术
 
-Be comfortable reading and understanding the majority of R code. You’ll recognise common idioms (even if you wouldn’t use them yourself) and be able to critique others’ code.
+There are two meta-techniques that are tremendously helpful for improving your skills as an R programmer: reading source code and adopting a scientific mindset.
+
+Reading source code is important because it will help you write better code. A great place to start developing this skill is to look at the source code of the functions and packages you use most often. You’ll find things that are worth emulating in your own code and you’ll develop a sense of taste for what makes good R code. You will also see things that you don’t like, either because its virtues are not obvious or it offends your sensibilities. Such code is nonetheless valuable, because it helps make concrete your opinions on good and bad code.
+
+A scientific mindset is extremely helpful when learning R. If you don’t understand how something works, develop a hypothesis, design some experiments, run them, and record the results. This exercise is extremely useful since if you can’t figure something out and need to get help, you can easily show others what you tried. Also, when you learn the right answer, you’ll be mentally prepared to update your world view. When I clearly describe a problem to someone else (the art of creating a reproducible example), I often figure out the solution myself.
 
 
