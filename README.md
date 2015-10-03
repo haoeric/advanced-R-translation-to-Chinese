@@ -42,8 +42,12 @@
 
 
 ## 这本书适合谁
+这本书适合一下两类读者：
+* 希望更深入探索R并且了解解决不同问题的新方法的R中级程序员。
+* 正在学习R并且想要知道R工作原理的其他编程语言的程序员。
 
+为了更好的理解这本书，你需要一定的R语言或其他语言的编程经历。你不需要了解所有R的知识，但你需要知道函数是如何在R中运行的，尽管你可能感觉熟练地驾驭R函数还有些吃力。同时你也应该熟悉apply家族函数的使用方法，比如`apply()`和`lapply()`.
 
-
+To get the most out of this book, you’ll need to have written a decent amount of code in R or another programming language. You might not know all the details, but you should be familiar with how functions work in R and although you may currently struggle to use them effectively, you should be familiar with the apply family (like apply() and lapply()).
 
 
