@@ -112,8 +112,13 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 大的代码段包括输入和输出。输出是被特别注释的。如果你用的是本书的电子版比如`http://adv-r.had.co.nz`，你能轻松的复制粘贴代码到R中运行。输出是用`#>`特别注释的，以此和常用注释分别开来。
 
-Colophon
-This book was written in Rmarkdown inside Rstudio. knitr and pandoc converted the raw Rmarkdown to html and pdf. The website was made with jekyll, styled with bootstrap, and automatically published to Amazon’s S3 by travis-ci. The complete source is available from github.
+##题记
 
-Code is set in inconsolata.
+这本书是在[Rstudio](http://www.rstudio.com/ide/)中用[Rmarkdown](http://rmarkdown.rstudio.com/)写成，然后用[knitr](http://yihui.name/knitr/)和[pandoc](http://johnmacfarlane.net/pandoc/) 转换成html和pdf格式。这个[网页](http://adv-r.had.co.nz/)
+是采用[bootstrap](http://getbootstrap.com/)
+模板使用[jekyll](http://jekyllrb.com/)搭建, 并且用[travis-ci](https://travis-ci.org/)自动上传到到Amazon的 S3[
+](http://aws.amazon.com/s3/)。本书完整的文本在[github](https://github.com/hadley/adv-r)
+上开源。
+
+代码格式为[inconsolata](http://levien.com/type/myfonts/inconsolata.html).
 
