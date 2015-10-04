@@ -81,9 +81,9 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 我发现Harold Abelson和Gerald Jay Sussman写的[《The Structure and Interpretation of Computer Programs》](http://mitpress.mit.edu/sicp/full-text/book/book.html)(SICP) 这本书对于理解R的面相对象系统非常有帮助。读完这本书，我第一次发现我也可以设计自己的一套面相对象系统。这本书是我学习R中面向对象编程的第一本指导书。SICP帮助我理解了面相对象的优缺点。同时这本书也介绍了很多关于函数式编程知识，以及如何将简单的函数组合起来实现复杂的功能。
 
-为了明白R相对于其他编程语言所作出的改变和妥协， Peter van Roy和Sef Haridi 写的[《Concepts, Techniques and Models of Computer Programming》](http://amzn.com/0262220695?tag=devtools-20) 这本书让我获益匪浅。这本书让我领会到R中修改再拷贝的语法极大地提高了R语言的直观性和可读性。尽管R语言在这一点目前还不算成熟，但是这在今后一定会被完善。
+为了明白R相对于其他编程语言所作出的改变和妥协， Peter van Roy和Sef Haridi 写的[《Concepts, Techniques and Models of Computer Programming》](http://amzn.com/0262220695?tag=devtools-20) 让我获益匪浅。这本书让我领会到R中修改再拷贝的语法极大地提高了R语言的直观性和可读性。尽管R语言在这一点目前还不算成熟，但是我相信这在今后一定会被完善。
 
-如果你向学习成为一个更优秀的程序员，你一定要读Andrew Hunt和David Thomas所写的[《The Pragmatic Programmer》](http://amzn.com/020161622X?tag=devtools-20)。这是一本语言不可被认知论的书，对于如何成为更优秀的程序员提供了相当多的宝贵建议。
+如果你想学习成为一个更优秀的程序员，你一定要读Andrew Hunt和David Thomas所写的[《The Pragmatic Programmer》](http://amzn.com/020161622X?tag=devtools-20)。这是一本语言不可被认知论的书，对于如何成为更优秀的程序员提供了相当多的宝贵建议。
 
 ##如何获得帮助
 
