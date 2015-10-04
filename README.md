@@ -98,7 +98,7 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 * 在提问前先搜索一下相关的问题。如果你能找到别人提出的同样的问题并且这个问题已经被解答了，那使用以解决的答案对你无疑是最快速的。
 
 
-##感谢
+##致谢
 
 I would like to thank the tireless contributors to R-help and, more recently, stackoverflow. There are too many to name individually, but I’d particularly like to thank Luke Tierney, John Chambers, Dirk Eddelbuettel, JJ Allaire and Brian Ripley for generously giving their time and correcting my countless misunderstandings.
 
