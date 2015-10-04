@@ -114,10 +114,7 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 ##题记
 
-这本书是在[Rstudio](http://www.rstudio.com/ide/)中用[Rmarkdown](http://rmarkdown.rstudio.com/)写成，然后用[knitr](http://yihui.name/knitr/)和[pandoc](http://johnmacfarlane.net/pandoc/) 转换成html和pdf格式。这个[网页](http://adv-r.had.co.nz/)
-是采用[bootstrap](http://getbootstrap.com/)
-模板使用[jekyll](http://jekyllrb.com/)搭建, 并且用[travis-ci](https://travis-ci.org/)自动上传到Amazon的[S3](http://aws.amazon.com/s3/)。本书完整版在[github](https://github.com/hadley/adv-r)
-上开源。
+这本书是在[Rstudio](http://www.rstudio.com/ide/)中用[Rmarkdown](http://rmarkdown.rstudio.com/)写成，然后用[knitr](http://yihui.name/knitr/)和[pandoc](http://johnmacfarlane.net/pandoc/) 转换成html和pdf格式。这个[网页](http://adv-r.had.co.nz/)是采用[bootstrap](http://getbootstrap.com/)模板使用[jekyll](http://jekyllrb.com/)搭建, 并且用[travis-ci](https://travis-ci.org/)自动上传到Amazon的[S3](http://aws.amazon.com/s3/)。本书完整版在[github](https://github.com/hadley/adv-r)上开源。
 
 代码格式为[inconsolata](http://levien.com/type/myfonts/inconsolata.html).
 
