@@ -55,7 +55,7 @@
 
 这本书包括了我认为一个高阶的R程序员需要掌握的技能：能写出在不同环境下运行的高质量代码。
 
-读完本书，你讲学到：
+读完本书，你将：
 
 * 熟悉R的基本知识。你会理解复杂的数据类型并且知道处理这些数据类型相应的最佳方法。你将对R函数是如何运行的有更深入的理解，并且能够理解和使用R的四种面向对象体系。
 
@@ -83,5 +83,36 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 为了明白R相对于其他编程语言所作出的改变和妥协， Peter van Roy和Sef Haridi 写的[《Concepts, Techniques and Models of Computer Programming》](http://amzn.com/0262220695?tag=devtools-20) 这本书让我获益匪浅。这本书让我领会到R中修改再拷贝的语法极大地提高了R语言的直观性和可读性。尽管R语言在这一点目前还不算成熟，但是这在今后一定会被完善。
 
-如果你向学习成为一个更优秀的程序员，你一定要读Andrew Hunt和David Thomas所写的[《The Pragmatic Programmer》](http://amzn.com/020161622X?tag=devtools-20)。这是一本语言不可被认知论的书，对于如何成为更优秀的程序员提供了相当多的宝贵建议。 
+如果你向学习成为一个更优秀的程序员，你一定要读Andrew Hunt和David Thomas所写的[《The Pragmatic Programmer》](http://amzn.com/020161622X?tag=devtools-20)。这是一本语言不可被认知论的书，对于如何成为更优秀的程序员提供了相当多的宝贵建议。
+
+##如何获得帮助
+
+当你在学习和运用R语言的过程中卡住或者找不出问题的原因，目前有两种主要的获得帮助的途径：[stackoverflow](http://stackoverflow.com/)和R-help邮箱列表。这两种途径各具特色，两者你都能从中得到极有效的帮助。但是在提出问题前，最好先了解一下各平台的背景和要求。
+
+一点建议：
+
+* 确保你使用的R环境和R工具包是最新版本。因为有可能你遇到的问题已经在新的版本中得到了解决。
+
+* 花点时间创建一个[可重复性的案例](http://stackoverflow.com/questions/5963269)。这将会是非常有帮助的，有可能你在创建的过程中就找出了问题所在。
+
+* 在提问前先搜索一下相关的问题。如果你能找到别人提出的同样的问题并且这个问题已经被解答了，那使用以解决的答案对你无疑是最快速的。
+
+
+
+Acknowledgments
+I would like to thank the tireless contributors to R-help and, more recently, stackoverflow. There are too many to name individually, but I’d particularly like to thank Luke Tierney, John Chambers, Dirk Eddelbuettel, JJ Allaire and Brian Ripley for generously giving their time and correcting my countless misunderstandings.
+
+This book was written in the open, and chapters were advertised on twitter when complete. It is truly a community effort: many people read drafts, fixed typos, suggested improvements, and contributed content. Without those contributors, the book wouldn’t be nearly as good as it is, and I’m deeply grateful for their help. Special thanks go to Peter Li, who read the book from cover-to-cover and provided many fixes. Other outstanding contributors were Aaron Schumacher, @crtahlin, Lingbing Feng, @juancentro, and @johnbaums.
+
+Thanks go to all contributers in alphabetical order: Aaron Schumacher, @aaronwolen, Aaron Wolen, @absolutelyNoWarranty, Adam Hunt, @agrabovsky, @ajdm, @alexbbrown, @alko989, @allegretto, @AmeliaMN, @andrewla, Andy Teucher, Anthony Damico, Anton Antonov, @aranlunzer, @arilamstein, @avilella, @baptiste, @blindjesse, @blmoore, @bnjmn, Brandon Hurr, @BrianDiggs, @Bryce, @Carson, @cdrv, Ching Boon, @chiphogg, Christopher Brown, @christophergandrud, C. Jason Liang, Clay Ford, @cornelius1729, @cplouffe, Craig Citro, @crossfitAL, @crowding, @crtahlin, Crt Ahlin, @cscheid, @csgillespie, @cusanovich, @cwarden, @cwickham, Daniel Lee, @darrkj, @Dasonk, David Hajage, David LeBauer, @dchudz, dennis feehan, @dfeehan, Dirk Eddelbuettel, @dkahle, @dlebauer, @dlschweizer, @dmontaner, @dougmitarotonda, @dpatschke, @duncandonutz, @EdFineOKL, @EDiLD, @eipi10, @elegrand, @EmilRehnberg, Eric C. Anderson, @etb, @fabian-s, Facundo Muñoz, @flammy0530, @fpepin, Frank Farach, @freezby, @fyears, @garrettgman, Garrett Grolemund, @gavinsimpson, @gggtest, Gökçen Eraslan, Gregg Whitworth, @gregorp, @gsee, @gsk3, @gthb, @hassaad85, @i, Iain Dillingham, @ijlyttle, Ilan Man, @imanuelcostigan, @initdch, Jason Asher, @jasondavies, Jason Knight, @jastingo, @jcborras, Jeff Allen, @jeharmse, @jentjr, @JestonBlu, @JimInNashville, @jinlong25, JJ Allaire, Jochen Van de Velde, Johann Hibschman, @johnbaums, John Blischak, @johnjosephhorton, John Verzani, Joris Muller, Joseph Casillas, @juancentro, @kdauria, @kenahoo, @kent37, Kevin Markham, Kevin Ushey, @kforner, Kirill Müller, Kun Ren, Laurent Gatto, @Lawrence-Liu, @ldfmrails, @lgatto, @liangcj, Lingbing Feng, @lynaghk, Maarten Kruijver, Mamoun Benghezal, @mannyishere, @mattbaggott, Matthew Grogan, @mattmalin, Matt Pettis, @michaelbach, Michael Kane, @mjsduncan, @Mullefa, @myqlarson, Nacho Caballero, Nick Carchedi, @nstjhp, @ogennadi, Oliver Keyes, @otepoti, Parker Abercrombie, @patperu, Patrick Miller, @pdb61, @pengyu, Peter F Schulam, Peter Lindbrook, Peter Meilstrup, @philchalmers, @picasa, @piccolbo, @pierreroudier, @pooryorick, @ramnathv, Ramnath Vaidyanathan, @Rappster, Ricardo Pietrobon, Richard Cotton, @richardreeve, R. Mark Sharp, @rmflight, @rmsharp, Robert M Flight, @RobertZK, @robiRagan, Romain François, @rrunner, @rubenfcasal, @sailingwave, @sarunasmerkliopas, @sbgraves237, @scottko, @scottl, Scott Ritchie, Sean Anderson, Sean Carmody, Sean Wilkinson, @sebastian-c, Sebastien Vigneau, @shabbychef, Shannon Rush, Simon O’Hanlon, Simon Potter, @SplashDance, @ste-fan, Stefan Widgren, @stephens999, Steven Pav, @strongh, @stuttungur, @surmann, @swnydick, @taekyunk, @talgalili, Tal Galili, @tdenes, @Thomas, @thomasherbig, @thomaszumbrunn, Tim Cole, @tjmahr, Tom Buckley, Tom Crockett, @ttriche, @twjacobs, @tyhenkaline, @tylerritchie, @ulrichatz, @varun729, @victorkryukov, @vijaybarve, @vzemlys, @wchi144, @wibeasley, @WilCrofter, William Doane, Winston Chang, @wmc3, @wordnerd, Yoni Ben-Meshulam, @zackham, @zerokarmaleft, Zhongpeng Lin.
+
+Conventions
+Throughout this book I use f() to refer to functions, g to refer to variables and function parameters, and h/ to paths.
+
+Larger code blocks intermingle input and output. Output is commented so that if you have an electronic version of the book, e.g., http://adv-r.had.co.nz, you can easily copy and paste examples into R. Output comments look like #> to distinguish them from regular comments.
+
+Colophon
+This book was written in Rmarkdown inside Rstudio. knitr and pandoc converted the raw Rmarkdown to html and pdf. The website was made with jekyll, styled with bootstrap, and automatically published to Amazon’s S3 by travis-ci. The complete source is available from github.
+
+Code is set in inconsolata.
 
