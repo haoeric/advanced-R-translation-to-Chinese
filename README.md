@@ -81,7 +81,9 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 我发现Harold Abelson和Gerald Jay Sussman写的 [The Structure and Interpretation of Computer Programs](http://mitpress.mit.edu/sicp/full-text/book/book.html)(SICP) 这本书对于理解R的面相对象系统非常有帮助。读完这本书，我第一次发现我也可以设计自己的一套面相对象系统。这本书是我学习R中面向对象编程的第一本指导书。SICP帮助我理解了面相对象的优缺点。同时这本书也介绍了很多关于函数式编程知识，以及如何将简单的函数组合其他实现复杂的功能。
 
-为了明白R相对于其他编程语言所作出的改变以及妥协， Peter van Roy 和 Sef Haridi[Concepts, Techniques and Models of Computer Programming](http://amzn.com/0262220695?tag=devtools-20)
+为了明白R相对于其他编程语言所作出的改变以及妥协， Peter van Roy 和 Sef Haridi 写的 [Concepts, Techniques and Models of Computer Programming](http://amzn.com/0262220695?tag=devtools-20) 这本书让我获益匪浅。
+
+
 by Peter van Roy and Sef Haridi extremely helpful. It helped me understand that R’s copy-on-modify semantics make it substantially easier to reason about code, and that while its current implementation is not particularly efficient, it is a solvable problem.
 
 If you want to learn to be a better programmer, there’s no place better to turn than The Pragmatic Programmer by Andrew Hunt and David Thomas. This book is language agnostic, and provides great advice for how to be a better programmer.
