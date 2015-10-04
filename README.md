@@ -108,15 +108,15 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 ##本书的一些惯例
 
-这本书中`f()`表示函数，`g`表示变量和函数的参数。`h/`表示路径。
+这本书中`f()`表示函数，`g`表示变量和函数的参数，`h/`表示路径。
 
-大的代码段包括输入和输出。输出是被特别注释的。如果你用的是本书的电子版比如`http://adv-r.had.co.nz`，你能轻松的复制粘贴代码到R中运行。输出是用`#>`特别注释的，以此和常用注释分别开来。
+书中有很多包括输入和输出的代码段。输出是被特别注释的。如果你用的是本书的电子版比如`http://adv-r.had.co.nz`，你能轻松的复制粘贴代码到R中运行。输出是用`#>`特别注释的，以此和常用注释分别开来。
 
 ##题记
 
 这本书是在[Rstudio](http://www.rstudio.com/ide/)中用[Rmarkdown](http://rmarkdown.rstudio.com/)写成，然后用[knitr](http://yihui.name/knitr/)和[pandoc](http://johnmacfarlane.net/pandoc/) 转换成html和pdf格式。这个[网页](http://adv-r.had.co.nz/)
 是采用[bootstrap](http://getbootstrap.com/)
-模板使用[jekyll](http://jekyllrb.com/)搭建, 并且用[travis-ci](https://travis-ci.org/)自动上传到到Amazon的 S3[
+模板使用[jekyll](http://jekyllrb.com/)搭建, 并且用[travis-ci](https://travis-ci.org/)自动上传到Amazon的 S3[
 ](http://aws.amazon.com/s3/)。本书完整的文本在[github](https://github.com/hadley/adv-r)
 上开源。
 
