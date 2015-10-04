@@ -18,7 +18,7 @@
 
 * R让你能很方便的和别人交流你的分析结果。R包让你很轻松的将你的分析结果输出成html或者pdf的[报告](http://yihui.name/knitr/)，甚至生成[动态的交互网页](http://www.rstudio.com/shiny/)。
 
-* R语言的设计基于函数编程理论。函数编程的思想适合解决绝大部分的数据分析问题。R提供强大而又灵活的工具让你编写精确而有高可读性的代码。
+* R语言的设计基于函数式编程理论。函数式编程的思想适合解决绝大部分的数据分析问题。R提供强大而又灵活的工具让你编写精确而有高可读性的代码。
 
 * R拥有一个专门为交互数据分析和统计编程而打造的[IDE](http://www.rstudio.com/ide/).
 
@@ -77,5 +77,13 @@
 
 ##推荐阅读
 
+R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完善中。在我个人学习R的过程中，我发现关于其他编程语言的资源对于学习R特别有帮助。R语言同时拥有函数式编程和面向对象编程的特性。学习这些特性在R语言中的体现方式能帮助你巩固其他语言相关的知识，同时帮助你发现哪些地方你还有进步的空间。
 
+我发现Harold Abelson和Gerald Jay Sussman写的 [The Structure and Interpretation of Computer Programs](http://mitpress.mit.edu/sicp/full-text/book/book.html)(SICP) 这本书对于理解R的面相对象系统非常有帮助。读完这本书，我第一次发现我也可以设计自己的一套面相对象系统。这本书是我学习R中面向对象编程的第一本指导书。SICP帮助我理解了面相对象的优缺点。同时这本书也介绍了很多关于函数式编程知识，以及如何将简单的函数组合其他实现复杂的功能。
+
+
+
+To understand the trade-offs that R has made compared to other programming languages, I found Concepts, Techniques and Models of Computer Programming by Peter van Roy and Sef Haridi extremely helpful. It helped me understand that R’s copy-on-modify semantics make it substantially easier to reason about code, and that while its current implementation is not particularly efficient, it is a solvable problem.
+
+If you want to learn to be a better programmer, there’s no place better to turn than The Pragmatic Programmer by Andrew Hunt and David Thomas. This book is language agnostic, and provides great advice for how to be a better programmer.
 
