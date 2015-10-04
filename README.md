@@ -110,7 +110,7 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 这本书中`f()`表示函数，`g`表示变量和函数的参数。`h/`表示路径。
 
-大的代码段包括输入和输出。输出是被特别注释的。如果你用的是本书的电子版比如http://adv-r.had.co.nz，你能轻松的复制粘贴代码到R中运行。输出是用`#>`特别注释的，以此和常用注释分别开来。
+大的代码段包括输入和输出。输出是被特别注释的。如果你用的是本书的电子版比如`http://adv-r.had.co.nz`，你能轻松的复制粘贴代码到R中运行。输出是用`#>`特别注释的，以此和常用注释分别开来。
 
 Colophon
 This book was written in Rmarkdown inside Rstudio. knitr and pandoc converted the raw Rmarkdown to html and pdf. The website was made with jekyll, styled with bootstrap, and automatically published to Amazon’s S3 by travis-ci. The complete source is available from github.
