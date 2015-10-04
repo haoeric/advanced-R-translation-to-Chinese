@@ -98,8 +98,8 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 * 在提问前先搜索一下相关的问题。如果你能找到别人提出的同样的问题并且这个问题已经被解答了，那使用以解决的答案对你无疑是最快速的。
 
 
+##感谢
 
-Acknowledgments
 I would like to thank the tireless contributors to R-help and, more recently, stackoverflow. There are too many to name individually, but I’d particularly like to thank Luke Tierney, John Chambers, Dirk Eddelbuettel, JJ Allaire and Brian Ripley for generously giving their time and correcting my countless misunderstandings.
 
 This book was written in the open, and chapters were advertised on twitter when complete. It is truly a community effort: many people read drafts, fixed typos, suggested improvements, and contributed content. Without those contributors, the book wouldn’t be nearly as good as it is, and I’m deeply grateful for their help. Special thanks go to Peter Li, who read the book from cover-to-cover and provided many fixes. Other outstanding contributors were Aaron Schumacher, @crtahlin, Lingbing Feng, @juancentro, and @johnbaums.
