@@ -100,7 +100,7 @@ R仍然是一个比较年轻的语言，帮助你学习R的资源还在不断完
 
 ##致谢
 
-I would like to thank the tireless contributors to R-help and, more recently, stackoverflow. There are too many to name individually, but I’d particularly like to thank Luke Tierney, John Chambers, Dirk Eddelbuettel, JJ Allaire and Brian Ripley for generously giving their time and correcting my countless misunderstandings.
+我要谢谢R-help那些不厌其烦的贡献者以及[stackoverflow](http://stackoverflow.com/questions/tagged/r)。有很多需要感谢的不能一一列举，但是在这其中我要特别谢谢Luke Tierney，John Chambers，Dirk Eddelbuettel，JJ Allaire和Brian Ripley花费的宝贵时间来帮助更正我不计其数的错误理解。
 
 This book was written in the open, and chapters were advertised on twitter when complete. It is truly a community effort: many people read drafts, fixed typos, suggested improvements, and contributed content. Without those contributors, the book wouldn’t be nearly as good as it is, and I’m deeply grateful for their help. Special thanks go to Peter Li, who read the book from cover-to-cover and provided many fixes. Other outstanding contributors were Aaron Schumacher, @crtahlin, Lingbing Feng, @juancentro, and @johnbaums.
 
