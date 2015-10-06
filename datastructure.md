@@ -17,7 +17,7 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 
 查看一个对象数据结构的最简单的方式是使用`str()`函数。`str()`是structure（结构）的缩写，它能对任何R数据结构提供简洁明了的描述。
 
-####测试
+#####测试
 
 做做这个简单的测试看看你是否需要阅读本章内容。如果你能很快的的到答案，你可以轻松的跳过本章。本章最后提供[参考答案](#data-structure-answers)。
 
@@ -28,23 +28,15 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 5. 一个列表可以是矩阵吗？一个数据框的一列可以是矩阵吗？
 
 
-##### Outline
+#####概要
 
-* [Vectors](#vectors) introduces you to atomic vectors and lists, R's 1d 
-  data structures.
+* [向量](#vectors) 介绍R的一维数据结构，原向量和列表
   
-* [Attributes](#attributes) takes a small detour to discuss attributes,
-  R's flexible metadata specification. Here you'll learn about factors,
-  an important data structure created by setting attributes of an atomic 
-  vector.
+* [属性](#attributes) 简单的介绍下R灵活的元数据说明方式－属性，这里会介绍原向量设置属性中的一种重要的数据结构－因子。
   
-* [Matrices and arrays](#matrices-and-arrays) introduces matrices and arrays,
-  data structures for storing 2d and higher dimensional data.
+* [矩阵和数组](#matrices-and-arrays) 介绍二维和高维的数据结构，矩阵和数组。
   
-* [Data frames](#data-frames) teaches you about the data frame, the most
-  important data structure for storing data in R. Data frames combine 
-  the behaviour of lists and matrices to make a structure ideally suited for
-  the needs of statistical data.
+* [数据框](#data-frames) 学习R中最重要的数据结构－数据框，数据框同时包涵列表和矩阵的特性，是一种非常适合做统计分析的数据结构。
 
 ## Vectors {#vectors}
 
