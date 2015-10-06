@@ -17,9 +17,9 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 
 查看一个对象数据结构的最简单的方式是使用`str()`函数。`str()`是structure（结构）的缩写，它能对任何R数据结构提供简洁明了的描述。
 
-###测试
+####测试
 
-做做这个简单的测试看看你是否需要阅读本章内容。如果你能很快的的到答案，你可以轻松的跳过本章。本章最后提供参考答案。
+做做这个简单的测试看看你是否需要阅读本章内容。如果你能很快的的到答案，你可以轻松的跳过本章。本章最后提供[参考答案](#data-structure-answers)。
 
 1. 数组除了它的内容，其他的三个特性是什么？
 2. 四种主要的原向量类型？以及另外两种不常用的原向量类型？
@@ -29,7 +29,7 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 
 
 
-Answers
+##答案{#data-structure-answers}
 The three properties of a vector are type, length, and attributes.
 
 The four common types of atomic vector are logical, integer, double (sometimes called numeric), and character. The two rarer types are complex and raw.
