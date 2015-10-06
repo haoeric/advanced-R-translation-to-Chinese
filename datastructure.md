@@ -40,15 +40,15 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 
 ## 向量 {#vectors}
 
-The basic data structure in R is the vector. Vectors come in two flavours: atomic vectors and lists. They have three common properties:
+向量是R中的基础数据结构。向量有两种形式：原向量和列表。它们有如下三种共同特性：
 
-* Type, `typeof()`, what it is.
-* Length, `length()`, how many elements it contains.
-* Attributes, `attributes()`, additional arbitrary metadata.
+* 类型， `typeof()`，是什么。
+* 长度， `length()`，有多少个元素。
+* 属性， `attributes()`, 其他任意的原数据.
 
-They differ in the types of their elements: all elements of an atomic vector must be the same type, whereas the elements of a list can have different types.
+他们主要的不同在于元素的类型：原向量的所有元素必须是相同的类型，但是列表的元素可以是不一样的类型。
 
-NB: `is.vector()` does not test if an object is a vector. Instead it returns `TRUE` only if the object is a vector with no attributes apart from names. Use `is.atomic(x) || is.list(x)` to test if an object is actually a vector.
+注意：`is.vector()` 并不测试一个对象是否是向量。只有当一个对象是向量并且除了名字没有其他属性时，`is.vector()`的返回值才是`TRUE`。请使用`is.atomic(x) || is.list(x)`来测试一个对象是否为向量。
 
 ### Atomic vectors
 
