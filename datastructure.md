@@ -38,7 +38,7 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
   
 * [数据框](#data-frames) 学习R中最重要的数据结构－数据框，数据框同时包涵列表和矩阵的特性，是一种非常适合做统计分析的数据结构。
 
-## Vectors {#vectors}
+## 向量 {#vectors}
 
 The basic data structure in R is the vector. Vectors come in two flavours: atomic vectors and lists. They have three common properties:
 
