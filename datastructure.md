@@ -50,8 +50,9 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 
 注意：`is.vector()` 并不测试一个对象是否是向量。只有当一个对象是向量并且除了名字没有其他属性时，`is.vector()`的返回值才是`TRUE`。请使用`is.atomic(x) || is.list(x)`来测试一个对象是否为向量。
 
-### Atomic vectors
+### 原向量
 
+我将详细的介绍下R中原向量的四种常见的类型：逻辑型(logicle)，整型(integer)，数值型(double or numeric)和字符型(character)。还有两种不常用的类型：复杂型(complex)和粗糙型(raw)，这里就不详细介绍了。
 There are four common types of atomic vectors that I'll discuss in detail: logical, integer, double (often called numeric), and character. There are two rare types that I will not discuss further: complex and raw. \index{atomic vectors} \index{vectors!atomic|see{atomic vectors}}
 
 Atomic vectors are usually created with `c()`, short for combine: \indexc{c()}
