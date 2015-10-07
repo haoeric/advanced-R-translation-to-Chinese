@@ -52,9 +52,9 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 
 ### 原向量
 
-我将详细的介绍下R中原向量的四种常见的类型：逻辑型(logicle)，整型(integer)，数值型(double or numeric)和字符型(character)。还有两种不常用的类型：复杂型(complex)和粗糙型(raw)，这里就不详细介绍了。\index{atomic vectors} \index{vectors!atomic|see{atomic vectors}}
+我将详细的介绍下R中原向量的四种常见的类型：逻辑型(logicle)，整型(integer)，数值型(double或则numeric)和字符型(character)。还有两种不常用的类型：复杂型(complex)和粗糙型(raw)，这里就不详细介绍了。
 
-原向量通常可以用`c()`函数来创建，`c()`表示组合(combine)：\indexc{c()}
+原向量通常可以用`c()`函数来创建，`c()`表示组合(combine)：
 
 ```r
 dbl_var <- c(1, 2.5, 4.5)
