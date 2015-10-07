@@ -52,31 +52,30 @@ R的基础数据结构可以通过纬度（1维，2维或n维）和同质或异�
 
 ### 原向量
 
-我将详细的介绍下R中原向量的四种常见的类型：逻辑型(logicle)，整型(integer)，数值型(double or numeric)和字符型(character)。还有两种不常用的类型：复杂型(complex)和粗糙型(raw)，这里就不详细介绍了。
-There are four common types of atomic vectors that I'll discuss in detail: logical, integer, double (often called numeric), and character. There are two rare types that I will not discuss further: complex and raw. \index{atomic vectors} \index{vectors!atomic|see{atomic vectors}}
+我将详细的介绍下R中原向量的四种常见的类型：逻辑型(logicle)，整型(integer)，数值型(double or numeric)和字符型(character)。还有两种不常用的类型：复杂型(complex)和粗糙型(raw)，这里就不详细介绍了。\index{atomic vectors} \index{vectors!atomic|see{atomic vectors}}
 
-Atomic vectors are usually created with `c()`, short for combine: \indexc{c()}
+原向量通常可以用`c()`函数来创建，`c()`表示组合(combine)：\indexc{c()}
 
-```{r}
+```r
 dbl_var <- c(1, 2.5, 4.5)
-# With the L suffix, you get an integer rather than a double
+# 用L做后缀会的到整型而不是数值型
 int_var <- c(1L, 6L, 10L)
-# Use TRUE and FALSE (or T and F) to create logical vectors
+# 用TRUE和FALSE(或者T和F) 创建逻辑型向量
 log_var <- c(TRUE, FALSE, T, F)
 chr_var <- c("these are", "some strings")
 ```
 
-Atomic vectors are always flat, even if you nest `c()`'s:
+原向量始终是扁平的，即使你嵌套使用多个`c()`:
 
-```{r}
+```r
 c(1, c(2, c(3, 4)))
-# the same as
+# 等同于如下
 c(1, 2, 3, 4)
 ```
 
-Missing values are specified with `NA`, which is a logical vector of length 1. `NA` will always be coerced to the correct type if used inside `c()`, or you can create `NA`s of a specific type with `NA_real_` (a double vector), `NA_integer_` and `NA_character_`. \indexc{NA}
+缺失值用`NA`来标明，实际上`NA`是一个长度为1的逻辑型向量。在 `c()`函数里，`NA`会始终被转换成正确的类型。你可以使用`NA_real_` (一个数值型向量)，`NA_integer_`和`NA_character_`来创建特殊类型的`NA`. \indexc{NA}
 
-#### Types and tests
+#### 类型和测试
 
 Given a vector, you can determine its type with `typeof()`, or check if it's a specific type with an "is" function: `is.character()`, `is.double()`, `is.integer()`, `is.logical()`, or, more generally, `is.atomic()`. \indexc{typeof()}
 
