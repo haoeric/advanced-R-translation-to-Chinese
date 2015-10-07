@@ -79,7 +79,7 @@ c(1, 2, 3, 4)
 
 你可以使用`typeof()`来确定一个向量的类型, 或则使用"is"函数（`is.character()`，`is.double()`，`is.integer()`，`is.logical()`）来测试是否为某个具体的类型，或者使用`is.atomic()`做一般测试。 \indexc{typeof()}
 
-```{r}
+```r
 int_var <- c(1L, 6L, 10L)
 typeof(int_var)
 is.integer(int_var)
