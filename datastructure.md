@@ -75,7 +75,7 @@ c(1, 2, 3, 4)
 
 缺失值用`NA`来标明，实际上`NA`是一个长度为1的逻辑型向量。在 `c()`函数里，`NA`会始终被转换成正确的类型。你可以使用`NA_real_` (一个数值型向量)，`NA_integer_`和`NA_character_`来创建特殊类型的`NA`.
 
-#### 类型和测试
+#### 类型测试
 
 你可以使用`typeof()`来确定一个向量的类型, 或则使用"is"函数（`is.character()`，`is.double()`，`is.integer()`，`is.logical()`）来测试是否为某个具体的类型，或者使用`is.atomic()`做一般测试。 \indexc{typeof()}
 
