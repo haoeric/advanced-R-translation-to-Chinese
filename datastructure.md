@@ -73,7 +73,7 @@ c(1, c(2, c(3, 4)))
 c(1, 2, 3, 4)
 ```
 
-缺失值用`NA`来标明，实际上`NA`是一个长度为1的逻辑型向量。在 `c()`函数里，`NA`会始终被转换成正确的类型。你可以使用`NA_real_` (一个数值型向量)，`NA_integer_`和`NA_character_`来创建特殊类型的`NA`.
+缺失值用`NA`来标明，实际上`NA`是一个长度为1的逻辑型向量。在 `c()`函数里，`NA`会始终被转换成逻辑类型。你可以使用`NA_real_` (一个数值型向量)，`NA_integer_`和`NA_character_`来创建特殊类型的`NA`.
 
 #### 类型测试
 
@@ -81,34 +81,34 @@ c(1, 2, 3, 4)
 
 ```r
 int_var <- c(1L, 6L, 10L)
-typeof(int_var)
-is.integer(int_var)
-is.atomic(int_var)
+typeof(int_var)        # "integer"  
+is.integer(int_var)    # TRUE
+is.atomic(int_var)     # TRUE
 
 dbl_var <- c(1, 2.5, 4.5)
-typeof(dbl_var)
-is.double(dbl_var)
-is.atomic(dbl_var)
+typeof(dbl_var)        # "double"
+is.double(dbl_var)     # TRUE
+is.atomic(dbl_var)     # TRUE
 ```
 
-NB: `is.numeric()` is a general test for the "numberliness" of a vector and returns `TRUE` for both integer and double vectors. It is not a specific test for double vectors, which are often called numeric. \indexc{is.numeric()}
+注意：`is.numeric()`是判断一个向量是否为数字的通用测试。也就是说不管是整型还是数值型的向量，它的返回值都是`TRUE`。所以`is.numeric()`并不是检测数值型(double货numeric)的专用函数。
 
 ```{r}
-is.numeric(int_var)
-is.numeric(dbl_var)
+is.numeric(int_var)  # TRUE
+is.numeric(dbl_var)  # TRUE
 ```
 
-#### Coercion
+#### 强制类型转换
 
-All elements of an atomic vector must be the same type, so when you attempt to combine different types they will be __coerced__ to the most flexible type. Types from least to most flexible are: logical, integer, double, and character. \index{coercion}
+一个原向量的所有元素都必须是相同的类型。因此当你不同类型的元素组合在一起的时候，它们会被__强制__转换成最通用的类型。不同类型的通用型由低到高排列是：逻辑型(logical)，整型(integer), 数值型(double), 和字符型(character)。
 
-For example, combining a character and an integer yields a character:
+例如，整形和字符型结合在一起就被转换成字符型：
 
 ```{r}
 str(c("a", 1))
 ```
 
-When a logical vector is coerced to an integer or double, `TRUE` becomes 1 and `FALSE` becomes 0. This is very useful in conjunction with `sum()` and `mean()`
+当一个逻辑型被强制转换成整型或则数值型时，`TRUE`会被转换成1，`FALSE`会被转换成0。这在与`sum()`和`mean()`搭配使用的时候非常有用。
 
 ```{r}
 x <- c(FALSE, FALSE, TRUE)
@@ -121,9 +121,9 @@ sum(x)
 mean(x)
 ```
 
-Coercion often happens automatically. Most mathematical functions (`+`, `log`, `abs`, etc.) will coerce to a double or integer, and most logical operations (`&`, `|`, `any`, etc) will coerce to a logical. You will usually get a warning message if the coercion might lose information. If confusion is likely, explicitly coerce with `as.character()`, `as.double()`, `as.integer()`, or `as.logical()`. 
+R中很多强制类型转换是自动的。比如在使用数学运算函数(如`+`，`log`，`abs`等)时，数据类型会被强制转换成数值型(double)或则整型(integer)； 在逻辑运算比如`&`，`|`，`any`等中，数据类型会被强制转换成逻辑型(logical)。在一些强制转换中通常如果有信息丢失，你都会的到一些警告信息。如果不确定，可以使用`as.character()`，`as.double()`，`as.integer()`或`as.logical()`来进行明确的类型转换。 
 
-### Lists
+### 
 
 Lists are different from atomic vectors because their elements can be of any type, including lists. You construct lists by using `list()` instead of `c()`: \index{lists} \index{vectors!lists|see{lists}}
 
