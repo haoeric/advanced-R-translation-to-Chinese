@@ -123,16 +123,16 @@ mean(x)
 
 R中很多强制类型转换是自动的。比如在使用数学运算函数(如`+`，`log`，`abs`等)时，数据类型会被强制转换成数值型(double)或则整型(integer)； 在逻辑运算比如`&`，`|`，`any`等中，数据类型会被强制转换成逻辑型(logical)。在一些强制转换中通常如果有信息丢失，你都会的到一些警告信息。如果不确定，可以使用`as.character()`，`as.double()`，`as.integer()`或`as.logical()`来进行明确的类型转换。 
 
-### 
+### 列表
 
-Lists are different from atomic vectors because their elements can be of any type, including lists. You construct lists by using `list()` instead of `c()`: \index{lists} \index{vectors!lists|see{lists}}
+列表和原向量的不同在于列表的元素可以是任意不同的类型和数据结构，包括列表。列表由`list()`而不是`c()`来创建。
 
 ```{r}
 x <- list(1:3, "a", c(TRUE, FALSE, TRUE), c(2.3, 5.9))
 str(x)
 ```
 
-Lists are sometimes called __recursive__ vectors, because a list can contain other lists. This makes them fundamentally different from atomic vectors.
+列表有时候也被称为__迭代__向量，因为一个列表也能包括其他列表。 这是他们与原向量有本质上的不同。
 
 ```{r}
 x <- list(list(list(list())))
