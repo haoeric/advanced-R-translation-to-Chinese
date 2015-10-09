@@ -167,7 +167,6 @@ is.list(mod)     # TRUE
 
 3. 预测如下代码中`c()`的结果来检测你对向量中强制类型转换规则的掌握情况：
     ```r
-    {r, eval=FALSE}
     c(1, FALSE)
     c("a", 1)
     c(list(1), "a")
