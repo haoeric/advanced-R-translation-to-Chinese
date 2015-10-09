@@ -185,7 +185,7 @@ is.list(mod)     # TRUE
 1. Why is the default missing value, `NA`, a logical vector? What's special
    about logical vectors? (Hint: think about `c(FALSE, NA_character_)`.)
 
-## Attributes {#attributes}
+## 属性 {#attributes}
 
 All objects can have arbitrary additional attributes, used to store metadata about the object. Attributes can be thought of as a named list (with unique names). Attributes can be accessed individually with `attr()` or all at once (as a list) with `attributes()`. \index{attributes}
 
@@ -247,7 +247,7 @@ names(z)
 
 You can create a new vector without names using `unname(x)`, or remove names in place with `names(x) <- NULL`.
 
-### Factors
+### 因子
 
 One important use of attributes is to define factors. A factor is a vector that can contain only predefined values, and is used to store categorical data. Factors are built on top of integer vectors using two attributes: the `class()`, "factor", which makes them behave differently from regular integer vectors, and the `levels()`, which defines the set of allowed values. \index{factors|(}
 
