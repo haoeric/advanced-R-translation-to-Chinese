@@ -140,7 +140,7 @@ str(x)
 is.recursive(x)
 ```
 
-`c()` will combine several lists into one. If given a combination of atomic vectors and lists, `c()` will coerce the vectors to lists before combining them. Compare the results of `list()` and `c()`:
+`c()`函数可以把多个列表组合成一个列表。`c()`不仅能组合原向量也能组合列表。在组合原向量前，`c()`会先将原向量强制转换成列表然后再组合。比较一下`list()`和`c()`的不同：
 
 ```{r}
 x <- list(list(1, 2), c(3, 4))
