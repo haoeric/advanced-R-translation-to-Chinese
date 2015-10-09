@@ -165,10 +165,9 @@ is.list(mod)     # TRUE
 
 2. `is.vector()`和`is.numeric()`与`is.list()`和`is.character()`本质上有什么不同？
 
-1. Test your knowledge of vector coercion rules by predicting the output of
-   the following uses of `c()`:
-
-    ```{r, eval=FALSE}
+1. 预测如下代码中`c()`的结果来检测你对向量中强制类型转换规则的掌握情况：
+    ```r
+    {r, eval=FALSE}
     c(1, FALSE)
     c("a", 1)
     c(list(1), "a")
