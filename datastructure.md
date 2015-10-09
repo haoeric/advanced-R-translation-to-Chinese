@@ -173,8 +173,7 @@ is.list(mod)     # TRUE
     c(TRUE, 1L)
     ```
 
-4.  Why do you need to use `unlist()` to convert a list to an 
-    atomic vector? Why doesn't `as.vector()` work? 
+4. 为什么要使用`unlist()`来将一个列表转换成原向量而不是使用`as.vector()`？ 
 
 1. Why is `1 == "1"` true? Why is `-1 < FALSE` true? Why is `"one" < 2` false?
 
