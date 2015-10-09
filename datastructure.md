@@ -175,7 +175,7 @@ is.list(mod)     # TRUE
 
 4. 为什么要使用`unlist()`来将一个列表转换成原向量而不是使用`as.vector()`？ 
 
-1. Why is `1 == "1"` true? Why is `-1 < FALSE` true? Why is `"one" < 2` false?
+5. 为什么`1 == "1"`的返回值是TRUE？为什么`-1 < FALSE`返回值是TRUE？为什么`"one" < 2`的返回值是FALSE？
 
 1. Why is the default missing value, `NA`, a logical vector? What's special
    about logical vectors? (Hint: think about `c(FALSE, NA_character_)`.)
