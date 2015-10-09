@@ -177,8 +177,7 @@ is.list(mod)     # TRUE
 
 5. 为什么`1 == "1"`的返回值是TRUE？为什么`-1 < FALSE`返回值是TRUE？为什么`"one" < 2`的返回值是FALSE？
 
-1. Why is the default missing value, `NA`, a logical vector? What's special
-   about logical vectors? (Hint: think about `c(FALSE, NA_character_)`.)
+6. 为什么表示缺失值的`NA`是一个逻辑型向量？逻辑型向量有什么特点？（提示：想一想`c(FALSE, NA_character_)`)
 
 ## 属性 {#attributes}
 
