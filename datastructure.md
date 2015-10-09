@@ -181,35 +181,32 @@ is.list(mod)     # TRUE
 
 ## 属性 {#attributes}
 
-All objects can have arbitrary additional attributes, used to store metadata about the object. Attributes can be thought of as a named list (with unique names). Attributes can be accessed individually with `attr()` or all at once (as a list) with `attributes()`. \index{attributes}
+所有的对象都可以拥有附加的属性，用来存储关于对象的元数据。属性可以看作无重复的名字列表。一个对象的属性可以使用`attr()`来单独查看，也可以使用`attributes()`列出所有属性。
 
-```{r}
+```r
 y <- 1:10
 attr(y, "my_attribute") <- "This is a vector"
 attr(y, "my_attribute")
 str(attributes(y))
 ```
 
-The `structure()` function returns a new object with modified attributes: \indexc{structure()}
+`structure()`函数可以用来修改一个对象的属性然后返回一个新的对象：
 
 ```{r}
 structure(1:10, my_attribute = "This is a vector")
 ```
-
-By default, most attributes are lost when modifying a vector:
+当一个向量被修改后，其大部分属性会默认地被丢失：
 
 ```{r}
 attributes(y[1])
 attributes(sum(y))
 ```
 
-The only attributes not lost are the three most important:
+其中有三个最重要的属性是不会丢失的：
 
-* Names, a character vector giving each element a name, described in 
-  [names](#vector-names). 
+* 名字，一个字符类向量存储每一个元素的名字。详见[名字](#vector-names)。
 
-* Dimensions, used to turn vectors into matrices and arrays, 
-  described in [matrices and arrays](#matrices-and-arrays).
+* 维度，用来将向量转化成矩阵和数组，详见[矩阵和数组](#matrices-and-arrays)。
 
 * Class, used to implement the S3 object system, described in [S3](#s3).
  
