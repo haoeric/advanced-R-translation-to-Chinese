@@ -91,7 +91,7 @@ is.double(dbl_var)     # TRUE
 is.atomic(dbl_var)     # TRUE
 ```
 
-注意：`is.numeric()`是判断一个向量是否为数字的通用测试。也就是说不管是整型还是数值型的向量，它的返回值都是`TRUE`。所以`is.numeric()`并不是检测数值型(double货numeric)的专用函数。
+注意：`is.numeric()`是判断一个向量是否为数字的通用测试。也就是说不管是整型还是数值型的向量，它的返回值都是`TRUE`。所以`is.numeric()`并不是检测数值型(double或numeric)的专用函数。
 
 ```{r}
 is.numeric(int_var)  # TRUE
