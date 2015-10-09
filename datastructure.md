@@ -326,7 +326,7 @@ While factors look (and often behave) like character vectors, they are actually 
     f3 <- factor(letters, levels = rev(letters))
     ```
 
-## Matrices and arrays {#matrices-and-arrays}
+## 矩阵和数组 {#matrices-and-arrays}
 
 Adding a `dim()` attribute to an atomic vector allows it to behave like a multi-dimensional __array__. A special case of the array is the __matrix__, which has two dimensions. Matrices are used commonly as part of the mathematical machinery of statistics. Arrays are much rarer, but worth being aware of. \index{arrays|(} \index{matrices|see{arrays}}
 
@@ -407,7 +407,7 @@ These are relatively esoteric data structures, but can be useful if you want to 
     x3 <- array(1:5, c(5, 1, 1))
     ```
 
-## Data frames {#data-frames}
+## 数据框 {#data-frames}
 
 A data frame is the most common way of storing data in R, and if [used systematically](http://vita.had.co.nz/papers/tidy-data.pdf) makes data analysis easier. Under the hood, a data frame is a list of equal-length vectors. This makes it a 2-dimensional structure, so it shares properties of both the matrix and the list.  This means that a data frame has `names()`, `colnames()`, and `rownames()`, although `names()` and `colnames()` are the same thing. The `length()` of a data frame is the length of the underlying list and so is the same as `ncol()`; `nrow()` gives the number of rows. \index{data frames|(}
 
