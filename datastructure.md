@@ -149,7 +149,9 @@ str(x)
 str(y)
 ```
 
-The `typeof()` a list is `list`. You can test for a list with `is.list()` and coerce to a list with `as.list()`. You can turn a list into an atomic vector with `unlist()`. If the elements of a list have different types, `unlist()` uses the same coercion rules as `c()`.
+一个列表的`typeof()`返回值是`list`。你可以使用`is.list()`来检测一个对象是否为list，也可以使用`as.list()`将一个对象强制转换成list。如果一个列表中的元素是不同的数据类型，使用`unlist()`进行强制类型转换将和`c()`函数的强制转换规则一样。
+
+
 
 Lists are used to build up many of the more complicated data structures in R. For example, both data frames (described in [data frames](#data-frames)) and linear models objects (as produced by `lm()`) are lists:
 
