@@ -161,11 +161,9 @@ is.list(mod)     # TRUE
 
 ### 练习
 
-1. What are the six types of atomic vector? How does a list differ from an
-   atomic vector?
+1. 原向量有哪六种类型？列表和原向量有什么不同？
 
-1. What makes `is.vector()` and `is.numeric()` fundamentally different to
-   `is.list()` and `is.character()`?
+2. `is.vector()`和`is.numeric()`与`is.list()`和`is.character()`本质上有什么不同？
 
 1. Test your knowledge of vector coercion rules by predicting the output of
    the following uses of `c()`:
