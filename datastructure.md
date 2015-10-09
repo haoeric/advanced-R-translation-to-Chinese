@@ -165,7 +165,7 @@ is.list(mod)     # TRUE
 
 2. `is.vector()`和`is.numeric()`与`is.list()`和`is.character()`本质上有什么不同？
 
-1. 预测如下代码中`c()`的结果来检测你对向量中强制类型转换规则的掌握情况：
+3. 预测如下代码中`c()`的结果来检测你对向量中强制类型转换规则的掌握情况：
     ```r
     {r, eval=FALSE}
     c(1, FALSE)
@@ -174,7 +174,7 @@ is.list(mod)     # TRUE
     c(TRUE, 1L)
     ```
 
-1.  Why do you need to use `unlist()` to convert a list to an 
+4.  Why do you need to use `unlist()` to convert a list to an 
     atomic vector? Why doesn't `as.vector()` work? 
 
 1. Why is `1 == "1"` true? Why is `-1 < FALSE` true? Why is `"one" < 2` false?
