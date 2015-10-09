@@ -149,20 +149,17 @@ str(x)
 str(y)
 ```
 
-一个列表的`typeof()`返回值是`list`。你可以使用`is.list()`来检测一个对象是否为list，也可以使用`as.list()`将一个对象强制转换成list。如果一个列表中的元素是不同的数据类型，使用`unlist()`进行强制类型转换将和`c()`函数的强制转换规则一样。
+一个列表的`typeof()`返回值是`list`。你可以使用`is.list()`来检测一个对象是否为列表，也可以使用`as.list()`将一个对象强制转换成列表。如果一个列表中的元素是不同的数据类型，使用`unlist()`进行强制类型转换将和`c()`函数的强制转换规则一样。
 
-
-
-Lists are used to build up many of the more complicated data structures in R. For example, both data frames (described in [data frames](#data-frames)) and linear models objects (as produced by `lm()`) are lists:
+列表在R中通常被用来创建更复杂的数据结构。比如[数据框](#data-frames)和线性模型对象(`lm()`函数的结果)都是列表：
 
 ```{r}
-is.list(mtcars)
-
+is.list(mtcars)  # TRUE
 mod <- lm(mpg ~ wt, data = mtcars)
-is.list(mod)
+is.list(mod)     # TRUE
 ```
 
-### Exercises
+### 练习
 
 1. What are the six types of atomic vector? How does a list differ from an
    atomic vector?
