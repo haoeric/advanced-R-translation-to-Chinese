@@ -365,13 +365,14 @@ str(matrix(1:3, nrow = 1)) # 一行矩阵
 str(array(1:3, 3))         # “数组”向量
 ```
 
-尽管通常使用`dim()`来将向量转换成矩阵，使用纬度属性也可以将列表转换成矩阵列表或数组列表。
+尽管通常使用`dim()`来将向量转换成矩阵，使用纬度属性也可以将列表转换成**矩阵列表**或**数组列表**。
 
-```{r}
+```r
 l <- list(1:3, "a", TRUE, 1.0)
 dim(l) <- c(2, 2)
 l
 ```
+
 
 These are relatively esoteric data structures, but can be useful if you want to arrange objects into a grid-like structure. For example, if you're running models on a spatio-temporal grid, it might be natural to preserve the grid structure by storing the models in a 3d array. \index{arrays|)}
 
