@@ -314,7 +314,9 @@ z$value
 
 ## 矩阵和数组 {#matrices-and-arrays}
 
-Adding a `dim()` attribute to an atomic vector allows it to behave like a multi-dimensional __array__. A special case of the array is the __matrix__, which has two dimensions. Matrices are used commonly as part of the mathematical machinery of statistics. Arrays are much rarer, but worth being aware of. \index{arrays|(} \index{matrices|see{arrays}}
+给原向量添加一个`dim()`属性会使原向量拥有多维__数组__的特性。
+矩阵是一种特殊的二维数组。矩阵在统计数学中的使用非常普遍。数组确相对比较少用，但是也是一种很重要的数据结构。
+
 
 Matrices and arrays are created with `matrix()` and `array()`, or by using the assignment form of `dim()`:
 
