@@ -324,11 +324,11 @@ a <- matrix(1:6, ncol = 3, nrow = 2)
 # 用一个向量来设置纬度
 b <- array(1:12, c(2, 3, 2))
 
-# You can also modify an object in place by setting dim()
-c <- 1:6
-dim(c) <- c(3, 2)
+# 也可以使用dim()将向量转换成矩阵和数组
+c <- 1:8
+dim(c) <- c(4, 2)
 c
-dim(c) <- c(2, 3)
+dim(c) <- c(2, 2, 3)
 c
 ```
 
