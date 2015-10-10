@@ -291,24 +291,21 @@ z$value
 
 ### 练习
 
-1.  An early draft used this code to illustrate `structure()`:
+1.  之前有种如下的代码演示`structure()`的使用：
 
     ```{r}
     structure(1:5, comment = "my attribute")
     ```
-
-    But when you print that object you don't see the comment attribute.
-    Why? Is the attribute missing, or is there something else special about
-    it? (Hint: try using help.) \index{attributes!comment}
-
-1.  What happens to a factor when you modify its levels? 
+    可是打印出来确并看不到comment属性。为什么？属性消失了吗，或者有一些其他的特别之处？
+    
+2.  当你修改一个因子的水平的时候会发生什么？
     
     ```{r, results = "none"}
     f1 <- factor(letters)
     levels(f1) <- rev(levels(f1))
     ```
 
-1.  What does this code do? How do `f2` and `f3` differ from `f1`?
+3.  下面的代码是用来做什么的？`f2`和`f3`与`f1`有什么不同？
 
     ```{r, results = "none"}
     f2 <- rev(factor(letters))
