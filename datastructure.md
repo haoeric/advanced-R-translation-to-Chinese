@@ -403,9 +403,9 @@ df <- data.frame(x = 1:3, y = c("a", "b", "c"))
 str(df)
 ```
 
-Beware `data.frame()`'s default behaviour which turns strings into factors. Use `stringAsFactors = FALSE` to suppress this behaviour: \indexc{stringsAsFactors}
+注意使用`data.frame()`会默认地将字符转换成因子，可以使用 `stringAsFactors = FALSE` 来取消这一转换。
 
-```{r}
+```r
 df <- data.frame(
   x = 1:3,
   y = c("a", "b", "c"),
@@ -413,9 +413,9 @@ df <- data.frame(
 str(df)
 ```
 
-### Testing and coercion
+### 测试和转换
 
-Because a `data.frame` is an S3 class, its type reflects the underlying vector used to build it: the list. To check if an object is a data frame, use `class()` or test explicitly with `is.data.frame()`:
+因为`data.frame`是一个S3类，因此它的类型是列表。查看一个对象是否为数据框，可以使用class()`或者更准确点使用`is.data.frame()`：
 
 ```{r}
 typeof(df)
