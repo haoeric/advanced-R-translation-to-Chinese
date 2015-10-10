@@ -365,8 +365,7 @@ str(matrix(1:3, nrow = 1)) # 一行矩阵
 str(array(1:3, 3))         # “数组”向量
 ```
 
-尽管通常
-While atomic vectors are most commonly turned into matrices, the dimension attribute can also be set on lists to make list-matrices or list-arrays: \index{arrays!list-arrays} \index{list-arrays}
+尽管通常使用`dim()`来将向量转换成矩阵，纬度属性也可以用来将列表转换成矩阵列表或数组列表。
 
 ```{r}
 l <- list(1:3, "a", TRUE, 1.0)
