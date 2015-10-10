@@ -444,11 +444,10 @@ rbind(df, data.frame(x = 10, y = "z"))
 
 使用`cbind()`合并多个向量来构建数据框是一个常见的错误。这样`cbind()`实际上会返回一个矩阵，只有当其中有一个是数据框时其返回的才是一个数据框。最简单的还是直接使用`data.frame()`：
 
-```{r}
+```r
 bad <- data.frame(cbind(a = 1:2, b = c("a", "b")))
 str(bad)
-good <- data.frame(a = 1:2, b = c("a", "b"),
-  stringsAsFactors = FALSE)
+good <- data.frame(a = 1:2, b = c("a", "b"), stringsAsFactors = FALSE)
 str(good)
 ```
 
