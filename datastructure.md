@@ -338,7 +338,7 @@ c
 
 * `names()`会概括一个矩阵的`rownames()`和`colnames()`信息，对于数组则概括`dimnames()`信息。
 
-```{r}
+```r
 length(a)
 nrow(a)
 ncol(a)
