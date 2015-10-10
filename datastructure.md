@@ -427,10 +427,9 @@ is.data.frame(df)
 
 * 一个向量会被转化成一列的数据框。
 
-* A list will create one column for each element; it's an error if they're 
-  not all the same length.
+* 一个列表中的每一个元素会被转化成一列，如果各元素间长度不一致，则会报错。
   
-* A matrix will create a data frame with the same number of columns and rows as the matrix.
+* 一个矩阵会被转换成you相同列数和行数的数据框。
 
 ### Combining data frames
 
