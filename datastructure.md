@@ -353,7 +353,7 @@ dimnames(b) <- list(c("one", "two"), c("a", "b", "c"), c("A", "B"))
 b
 ```
 
-`c()` generalises to `cbind()` and `rbind()` for matrices, and to `abind()` (provided by the `abind` package) for arrays. You can transpose a matrix with `t()`; the generalised equivalent for arrays is `aperm()`. \indexc{cbind()} \indexc{rbind()} \indexc{abind()} \indexc{aperm()}
+矩阵中和`c()`相对应的函数分别是`cbind()`和`rbind()`，数组中则是`abind()`（由`abind`包提供）。 for arrays. You can transpose a matrix with `t()`; the generalised equivalent for arrays is `aperm()`. \indexc{cbind()} \indexc{rbind()} \indexc{abind()} \indexc{aperm()}
 
 You can test if an object is a matrix or array using `is.matrix()` and `is.array()`, or by looking at the length of the `dim()`. `as.matrix()` and `as.array()` make it easy to turn an existing vector into a matrix or array.
 
