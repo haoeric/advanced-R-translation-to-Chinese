@@ -423,9 +423,9 @@ class(df)
 is.data.frame(df)
 ```
 
-你可是使用 `as.data.frame()`讲一个对象强制转换成数据框：
+你可是使用 `as.data.frame()`将一个对象强制转换成一个数据框：
 
-* A vector will create a one-column data frame.
+* 一个向量会被转化成一列的数据框。
 
 * A list will create one column for each element; it's an error if they're 
   not all the same length.
