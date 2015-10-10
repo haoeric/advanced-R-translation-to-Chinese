@@ -270,8 +270,8 @@ table(sex_factor)
 z <- read.csv(text = "value\n12\n1\n.\n9")
 typeof(z$value)
 as.double(z$value)
-# 嗷嗷，这不对。3 2 1 4是这个因子的水平，不是我们读进去的数值
 
+# 嗷嗷，这不对。3 2 1 4是这个因子的水平，不是我们读进去的数值
 class(z$value)
 
 # 我们可以这样来解决：
