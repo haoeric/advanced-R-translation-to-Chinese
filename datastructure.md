@@ -309,7 +309,6 @@ z$value
 
     ```r
     f2 <- rev(factor(letters))
-
     f3 <- factor(letters, levels = rev(letters))
     ```
 
