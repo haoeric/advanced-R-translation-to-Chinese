@@ -338,6 +338,7 @@ c
 
 * 在矩阵中和`names()`相对应的函数是`rownames()`和`colnames()`信息，在数组中和`names()`相对应的函数则是`dimnames()`。
 
+
 ```r
 length(a)
 nrow(a)
