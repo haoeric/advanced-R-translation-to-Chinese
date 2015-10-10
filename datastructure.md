@@ -456,15 +456,15 @@ str(good)
 
 ### 特殊列
 
-Since a data frame is a list of vectors, it is possible for a data frame to have a column that is a list: \index{data frames!list in column}
+由于数据框本质是包含多个向量的列表，因此给一个数据框添加一个是列表的列也是可以的：
 
-```{r}
+```r
 df <- data.frame(x = 1:3)
 df$y <- list(1:2, 1:3, 1:4)
 df
 ```
 
-However, when a list is given to `data.frame()`, it tries to put each item of the list into its own column, so this fails:
+但是，当传递一个列表到`data.frame()`函数时，`data.frame()`会试图将列表中的每一个元素单独放到一列中，这时候就可能报错：
 
 ```{r, error = TRUE}
 data.frame(x = 1:3, y = list(1:2, 1:3, 1:4))
