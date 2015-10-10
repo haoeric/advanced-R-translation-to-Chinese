@@ -285,10 +285,9 @@ z$value
 # 完美！:)
 ```
 
-不幸的是，R中很多的数据读取函数都会自动的将字符型向量转换成因子。这不是最优的方案，因为这些函数不可能知道所有的水平以及他们正确的顺序。你可以在函数中声名`stringsAsFactors = FALSE`来除去这种转换，然后根据你对数据的了解和需要，手动的将特定的字符型向量转换成因子。
+不幸的是，R中很多的数据读取函数都会自动的将字符型向量转换成因子。这不是最优的方案，因为这些函数不可能知道所有的因子水平以及他们正确的顺序。你可以在函数中声名`stringsAsFactors = FALSE`来去除这种转换，然后根据你对数据的了解和需要，手动的将特定的字符型向量转换成因子。另外，设置全局变量`options(stringsAsFactors = FALSE)`也可以用来去除这种强制转换，然而我并不推荐使用。修改全局变量会对外部添加的代码（无论是使用`source()`或引入其他包）造成不可预知的影响，同时它也降低了代码的可读性，因为你需要知道修改的全局变量对哪些代码产生了影响。
 
 
-A global option, `options(stringsAsFactors = FALSE)`, is available to control this behaviour, but I don't recommend using it. Changing a global option may have unexpected consequences when combined with other code (either from packages, or code that you're `source()`ing), and global options make code harder to understand because they increase the number of lines you need to read to understand how a single line of code will behave.  \indexc{stringsAsFactors}
 
 While factors look (and often behave) like character vectors, they are actually integers. Be careful when treating them like strings. Some string methods (like `gsub()` and `grepl()`) will coerce factors to strings, while others (like `nchar()`) will throw an error, and still others (like `c()`) will use the underlying integer values. For this reason, it's usually best to explicitly convert factors to character vectors if you need string-like behaviour. In early versions of R, there was a memory advantage to using factors instead of character vectors, but this is no longer the case. \index{factors|)}
 
