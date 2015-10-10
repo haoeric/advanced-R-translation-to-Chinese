@@ -254,7 +254,7 @@ x
 c(factor("a"), factor("b"))
 ```
 
-Factors are useful when you know the possible values a variable may take, even if you don't see all values in a given dataset. Using a factor instead of a character vector makes it obvious when some groups contain no observations:
+当你不知道一个数据中的所有值，但是只知道某个变量的可能值时，使用因子会非常有用。使用因子而不是字符向量使得查看某个类别中是否有观测值变得非常方便：
 
 ```{r}
 sex_char <- c("m", "m", "m")
@@ -263,8 +263,7 @@ sex_factor <- factor(sex_char, levels = c("m", "f"))
 table(sex_char)
 table(sex_factor)
 ```
-
-Sometimes when a data frame is read directly from a file, a column you'd thought would produce a numeric vector instead produces a factor. This is caused by a non-numeric value in the column, often a missing value encoded in a special way like `.` or `-`. To remedy the situation, coerce the vector from a factor to a character vector, and then from a character to a double vector. (Be sure to check for missing values after this process.) Of course, a much better plan is to discover what caused the problem in the first place and fix that; using the `na.strings` argument to `read.csv()` is often a good place to start.
+当你从一个文件中直接读取一个数据框时，你认为应该是数值型向量的某一列可能会变成了一个因子。这应该是因为该列中存在非数值的元素，通常是一些用特殊字符比如`.`或者`-`标记的缺失值。对于这种情况，你可以将这一列先强制转换成字符行向量，然后再强制转换成数值型向量（在转换后记得查看缺失值）。当然，更简单的方法是在读取数据的时候就解决这个问题。比如在使用`read.csv()`函数时设置`na.strings`参数。
 
 ```{r}
 # Reading in "text" instead of from a file here:
