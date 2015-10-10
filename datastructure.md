@@ -492,7 +492,7 @@ dfm[2, "y"]
 
 ### 练习
 
-1.  What attributes does a data frame possess?
+1.  数据框拥有什么样的属性？
 
 1.  What does `as.matrix()` do when applied to a data frame with 
     columns of different types?
