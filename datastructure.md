@@ -499,6 +499,7 @@ dfm[2, "y"]
 3. 可以创建一个只有一行或者只有一列的数据框吗？
 
 ##答案{#data-structure-answers}
+
 The three properties of a vector are type, length, and attributes.
 
 The four common types of atomic vector are logical, integer, double (sometimes called numeric), and character. The two rarer types are complex and raw.
