@@ -454,7 +454,7 @@ str(good)
 使用`cbind()`合并的转换规则比较复杂，最好使用的时候保证所有输入都是相同的类型。
 
 
-### Special columns
+### 特殊列
 
 Since a data frame is a list of vectors, it is possible for a data frame to have a column that is a list: \index{data frames!list in column}
 
