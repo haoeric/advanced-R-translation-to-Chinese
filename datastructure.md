@@ -266,21 +266,21 @@ table(sex_factor)
 当你从一个文件中直接读取一个数据框时，你认为应该是数值型向量的某一列可能会变成了一个因子。这应该是因为该列中存在非数值的元素，通常是一些用特殊字符比如`.`或者`-`标记的缺失值。对于这种情况，你可以将这一列先强制转换成字符行向量，然后再强制转换成数值型向量（在转换后记得查看缺失值）。当然，更简单的方法是在读取数据的时候就解决这个问题。比如在使用`read.csv()`函数时设置`na.strings`参数。
 
 ```{r}
-# Reading in "text" instead of from a file here:
+# 用你的文本文件名替代下面的"text"：
 z <- read.csv(text = "value\n12\n1\n.\n9")
 typeof(z$value)
 as.double(z$value)
-# Oops, that's not right: 3 2 1 4 are the levels of a factor, 
-# not the values we read in!
+# 嗷嗷，这不对。3 2 1 4是这个因子的水平，不是我们读进去的数值
+
 class(z$value)
-# We can fix it now:
+# 我们可以这样来解决：
 as.double(as.character(z$value))
-# Or change how we read it in:
+# 或者我们修改我们读取文件的函数：
 z <- read.csv(text = "value\n12\n1\n.\n9", na.strings=".")
 typeof(z$value)
 class(z$value)
 z$value
-# Perfect! :)
+# 完美！:)
 ```
 
 Unfortunately, most data loading functions in R automatically convert character vectors to factors. This is suboptimal, because there's no way for those functions to know the set of all possible levels or their optimal order. Instead, use the argument `stringsAsFactors = FALSE` to suppress this behaviour, and then manually convert character vectors to factors using your knowledge of the data. A global option, `options(stringsAsFactors = FALSE)`, is available to control this behaviour, but I don't recommend using it. Changing a global option may have unexpected consequences when combined with other code (either from packages, or code that you're `source()`ing), and global options make code harder to understand because they increase the number of lines you need to read to understand how a single line of code will behave.  \indexc{stringsAsFactors}
