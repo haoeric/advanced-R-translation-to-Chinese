@@ -431,9 +431,9 @@ is.data.frame(df)
   
 * 一个矩阵会被转换成you相同列数和行数的数据框。
 
-### 组合数据框
+### 合并数据框
 
-你可以使用`cbind()`和`rbind()`来组合数据框：
+你可以使用`cbind()`和`rbind()`来合并数据框：
 
 ```r
 cbind(df, data.frame(z = 3:1))
