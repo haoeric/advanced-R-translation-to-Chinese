@@ -314,8 +314,7 @@ z$value
 
 ## 矩阵和数组 {#matrices-and-arrays}
 
-给原向量添加一个`dim()`属性会使原向量拥有多维__数组__的特性。
-矩阵是一种特殊的二维数组。矩阵在统计数学中的使用非常普遍。数组确相对比较少用，但是也是一种很重要的数据结构。
+给原向量添加一个`dim()`属性会将原向量转换成多维__数组__。矩阵是一种特殊的二维数组。矩阵在统计数学中的使用非常普遍。数组确相对比较少用，但是也是一种很重要的数据结构。
 
 
 Matrices and arrays are created with `matrix()` and `array()`, or by using the assignment form of `dim()`:
