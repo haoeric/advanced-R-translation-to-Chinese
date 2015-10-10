@@ -372,9 +372,7 @@ l <- list(1:3, "a", TRUE, 1.0)
 dim(l) <- c(2, 2)
 l
 ```
-
-
-These are relatively esoteric data structures, but can be useful if you want to arrange objects into a grid-like structure. For example, if you're running models on a spatio-temporal grid, it might be natural to preserve the grid structure by storing the models in a 3d array. \index{arrays|)}
+这些是一些相对隐秘的数据结构，但是如果你想将对象存放在格子一样的数据结构中，这将会很有帮助。比如你在时空格（spatio-temporal grid）模型中运算，将数据存储在三维数组中将维持数据的三维空间结构从而极大地方便了数据操控。
 
 ### Exercises
 
