@@ -307,7 +307,7 @@ z$value
 
 3.  下面的代码是用来做什么的？`f2`和`f3`与`f1`有什么不同？
 
-    ```{r, results = "none"}
+    ```r
     f2 <- rev(factor(letters))
 
     f3 <- factor(letters, levels = rev(letters))
