@@ -390,7 +390,8 @@ l
 
 ## 数据框 {#data-frames}
 
-数据框是R中存储数据最常用的数据结构。在程序中[普及使用](http://vita.had.co.nz/papers/tidy-data.pdf)数据框会使得数据分析更简单。其实隐藏在数据框中的是一个**包含多个相同长度向量的列表**。因此数据框是一个同时拥有矩阵和列表特性的二维数据结构。这意味着数据框有`names()`也有`colnames()`和`rownames()`，尽管`names()`和`colnames()`是同一回事。用`length()` of a data frame is the length of the underlying list and so is the same as `ncol()`; `nrow()` gives the number of rows. \index{data frames|(}
+数据框是R中存储数据最常用的数据结构。在程序中[普及使用](http://vita.had.co.nz/papers/tidy-data.pdf)数据框会使得数据分析更简单。其实隐藏在数据框中的是一个**包含多个相同长度向量的列表**。因此数据框是一个同时拥有矩阵和列表特性的二维数据结构。这意味着数据框有`names()`也有`colnames()`和`rownames()`，尽管`names()`和`colnames()`是同一回事。用`length()`查看一个数据框的返回值是数据框中潜在列表的长度，因此和`ncol()`的返回值相同； `nrow()`返回数据框的行数。
+
 
 As described in [subsetting](#subsetting), you can subset a data frame like a 1d structure (where it behaves like a list), or a 2d structure (where it behaves like a matrix).
 
