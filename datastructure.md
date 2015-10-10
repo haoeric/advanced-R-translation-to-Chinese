@@ -332,7 +332,7 @@ dim(c) <- c(2, 2, 3)
 c
 ```
 
-`length()` and `names()` have high-dimensional generalisations:
+`length()`和`names()`在矩阵和数组中也可以使用：
 
 * `length()` generalises to `nrow()` and `ncol()` for matrices, and `dim()`
   for arrays. \indexc{nrow()} \indexc{ncol()} \indexc{dim()}
