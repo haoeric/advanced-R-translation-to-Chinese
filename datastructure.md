@@ -334,8 +334,7 @@ c
 
 `length()`和`names()`在矩阵和数组中也可以使用：
 
-* `length()` generalises to `nrow()` and `ncol()` for matrices, and `dim()`
-  for arrays. \indexc{nrow()} \indexc{ncol()} \indexc{dim()}
+* `length()`概括一个矩阵的`nrow()`和`ncol()`信息，对于数组则概括`dim()`。
 
 * `names()` generalises to `rownames()` and `colnames()` for matrices, and
   `dimnames()`, a list of character vectors, for arrays. \indexc{rownames()}
