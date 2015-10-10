@@ -374,7 +374,7 @@ l
 ```
 这些是一些相对隐秘的数据结构，但是如果你想将对象存放在格子一样的数据结构中，这将会很有帮助。比如你在时空格（spatio-temporal grid）模型中运算，将数据存储在三维数组中将维持数据的三维空间结构从而极大地方便了数据操控。
 
-### Exercises
+### 练习
 
 1.  What does `dim()` return when applied to a vector?
 
