@@ -378,12 +378,11 @@ l
 
 1.  对一个向量使用`dim()`将返回什么值?
 
-1.  如果`is.matrix(x)`返回`TRUE`，那么`is.array(x)`将返回什么？
+2.  如果`is.matrix(x)`返回`TRUE`，那么`is.array(x)`将返回什么？
 
-1.  How would you describe the following three objects? What makes them
-    different to `1:5`?
+3.  如何描述如下三种对象？它们和`1:5`有什么不同？
 
-    ```{r}
+    ```r
     x1 <- array(1:5, c(1, 1, 5))
     x2 <- array(1:5, c(1, 5, 1))
     x3 <- array(1:5, c(5, 1, 1))
