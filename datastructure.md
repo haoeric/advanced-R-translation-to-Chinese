@@ -238,7 +238,7 @@ names(z)
 
 ### 因子
 
-One important use of attributes is to define factors. A factor is a vector that can contain only predefined values, and is used to store categorical data. Factors are built on top of integer vectors using two attributes: the `class()`, "factor", which makes them behave differently from regular integer vectors, and the `levels()`, which defines the set of allowed values. \index{factors|(}
+使用名字的一大好处是可以定义因子。因子是一个仅包含预设值的向量，用来存储分类数据。因子是由整型向量添建两种属性来创建的。这两种属性分别是：`class()`为“因子”，使他们和常规的整形向量区分开，以及`levels()`，用来定义向量元素的类别。
 
 ```{r}
 x <- factor(c("a", "b", "b", "a"))
