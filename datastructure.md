@@ -488,8 +488,7 @@ str(dfm)
 dfm[2, "y"]
 ```
 
-
-Use list and array columns with caution: many functions that work with data frames assume that all columns are atomic vectors. \index{data frames|)}
+使用含有列表和数组作为一列的数据框时要注意：大多数对数据框的操作函数都默认数据框的每一列为原向量。
 
 ### Exercises
 
