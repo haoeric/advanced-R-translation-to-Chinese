@@ -300,7 +300,7 @@ z$value
     
 2.  当你修改一个因子的水平的时候会发生什么？
     
-    ```{r, results = "none"}
+    ```r
     f1 <- factor(letters)
     levels(f1) <- rev(levels(f1))
     ```
