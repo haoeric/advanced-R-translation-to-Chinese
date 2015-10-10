@@ -273,8 +273,10 @@ as.double(z$value)
 # 嗷嗷，这不对。3 2 1 4是这个因子的水平，不是我们读进去的数值
 
 class(z$value)
+
 # 我们可以这样来解决：
 as.double(as.character(z$value))
+
 # 或者我们修改我们读取文件的函数：
 z <- read.csv(text = "value\n12\n1\n.\n9", na.strings=".")
 typeof(z$value)
