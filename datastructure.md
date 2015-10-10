@@ -442,7 +442,7 @@ rbind(df, data.frame(x = 10, y = "z"))
 
 如果按列来合并，那么两个数据框必须要有相同的行数，行名称会被忽略。如果按行来合并，那么他们的列数和列名称都必须相同。你也可以使用`plyr::rbind.fill()`来合并拥有不同列数的数据框。
 
-It's a common mistake to try and create a data frame by `cbind()`ing vectors together. This doesn't work because `cbind()` will create a matrix unless one of the arguments is already a data frame. Instead use `data.frame()` directly:
+使用`cbind()`合并多个向量来构建数据框是一个常见的错误。这样`cbind()`实际上会返回一个矩阵，只有当其中有一个是数据框时其返回的才是一个数据框。最简单的还是直接使用`data.frame()`：
 
 ```{r}
 bad <- data.frame(cbind(a = 1:2, b = c("a", "b")))
