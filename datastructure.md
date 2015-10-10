@@ -365,6 +365,7 @@ str(matrix(1:3, nrow = 1)) # 一行矩阵
 str(array(1:3, 3))         # “数组”向量
 ```
 
+尽管通常
 While atomic vectors are most commonly turned into matrices, the dimension attribute can also be set on lists to make list-matrices or list-arrays: \index{arrays!list-arrays} \index{list-arrays}
 
 ```{r}
