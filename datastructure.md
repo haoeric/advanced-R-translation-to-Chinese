@@ -234,7 +234,7 @@ z <- c(1, 2, 3)
 names(z)
 ```
 
-You can create a new vector without names using `unname(x)`, or remove names in place with `names(x) <- NULL`.
+你可以使用`unname(x)`得到一个去掉名字的新向量，或则用`names(x) <- NULL`来去掉该对象的名字。
 
 ### 因子
 
