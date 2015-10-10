@@ -212,17 +212,15 @@ attributes(sum(y))
 
 以上三种属性有专门的函数来用来查看和设置其属性值，分别是 `names(x)`，`dim(x)`和`class(x)`，注意这里不是用`attr(x, "names")`，`attr(x, "dim")`和`attr(x, "class")`。
 
-#### Names {#vector-names}
+#### 名字{#vector-names}
 
-You can name a vector in three ways: \index{attributes|names}
+你可以用以下三种方式来给向量命名：
 
-* When creating it: `x <- c(a = 1, b = 2, c = 3)`.
+* 在创建时：`x <- c(a = 1, b = 2, c = 3)`。
 
-* By modifying an existing vector in place: 
-  `x <- 1:3; names(x) <- c("a", "b", "c")`. \indexc{names()}
+* 修改一个已有向量的名字属性：`x <- 1:3; names(x) <- c("a", "b", "c")`。
 
-* By creating a modified copy of a vector: 
-  `x <- setNames(1:3, c("a", "b", "c"))`. \indexc{setNames()}
+* 复制一个向量并添加名称属性：`x <- setNames(1:3, c("a", "b", "c"))`。
 
 Names don't have to be unique. However, character subsetting, described in [subsetting](#lookup-tables), is the most important reason to use names and it is most useful when the names are unique.
 
