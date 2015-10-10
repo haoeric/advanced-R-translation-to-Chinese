@@ -494,10 +494,9 @@ dfm[2, "y"]
 
 1.  数据框拥有什么样的属性？
 
-2.  What does `as.matrix()` do when applied to a data frame with 
-    columns of different types?
+2.  当对一个含有不同类型列的数据框使用 `as.matrix()` 时会得到什么？
 
-1.  Can you have a data frame with 0 rows? What about 0 columns?
+3. 可以创建一个只有一行或者只有一列的数据框吗？
 
 ##答案{#data-structure-answers}
 The three properties of a vector are type, length, and attributes.
