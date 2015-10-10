@@ -490,7 +490,7 @@ dfm[2, "y"]
 
 使用含有列表和数组作为一列的数据框时要注意：大多数对数据框的操作函数都默认数据框的每一列为原向量。
 
-### Exercises
+### 练习
 
 1.  What attributes does a data frame possess?
 
