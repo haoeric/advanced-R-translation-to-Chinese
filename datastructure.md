@@ -338,7 +338,6 @@ c
 
 * 在矩阵中和`names()`相对应的函数是`rownames()`和`colnames()`信息，在数组中和`names()`相对应的函数则是`dimnames()`。
 
-
 ```r
 length(a)
 nrow(a)
@@ -355,7 +354,7 @@ b
 
 矩阵中和`c()`相对应的函数分别是`cbind()`和`rbind()`，数组中则是`abind()`（由`abind`包提供）。你可以使用`t()`来转置一个矩阵；数组转置则用`aperm()`。
 
-You can test if an object is a matrix or array using `is.matrix()` and `is.array()`, or by looking at the length of the `dim()`. `as.matrix()` and `as.array()` make it easy to turn an existing vector into a matrix or array.
+你可以使用`is.matrix()`和`is.array()`来检测一个对象是否为矩阵或则数组，使用`dim()`来检测该对象的纬度。使用`as.matrix()`或`as.array()`则可以将一个向量轻松地转换成矩阵或则数组。
 
 Vectors are not the only 1-dimensional data structure. You can have matrices with a single row or single column, or arrays with a single dimension. They may print similarly, but will behave differently. The differences aren't too important, but it's useful to know they exist in case you get strange output from a function (`tapply()` is a frequent offender). As always, use `str()` to reveal the differences. \index{arrays!1d}
 
