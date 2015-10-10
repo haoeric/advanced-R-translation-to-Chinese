@@ -435,7 +435,7 @@ is.data.frame(df)
 
 你可以使用`cbind()`和`rbind()`来组合数据框：
 
-```{r}
+```r
 cbind(df, data.frame(z = 3:1))
 rbind(df, data.frame(x = 10, y = "z"))
 ```
