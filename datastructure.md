@@ -334,11 +334,9 @@ c
 
 `length()`和`names()`在矩阵和数组中也可以使用：
 
-* `length()`概括一个矩阵的`nrow()`和`ncol()`信息，对于数组则概括`dim()`。
+* `length()`会概括一个矩阵的`nrow()`和`ncol()`信息，对于数组则概括`dim()`信息。
 
-* `names()` generalises to `rownames()` and `colnames()` for matrices, and
-  `dimnames()`, a list of character vectors, for arrays. \indexc{rownames()}
-  \indexc{colnames()} \indexc{dimnames()}
+* `names()`会概括一个矩阵的`rownames()`和`colnames()`信息，对于数组则概括`dimnames()`信息。
 
 ```{r}
 length(a)
