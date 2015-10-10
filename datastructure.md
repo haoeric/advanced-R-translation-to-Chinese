@@ -431,7 +431,7 @@ is.data.frame(df)
   
 * 一个矩阵会被转换成you相同列数和行数的数据框。
 
-### Combining data frames
+### 组合数据框
 
 You can combine data frames using `cbind()` and `rbind()`: \indexc{cbind()} \indexc{rbind()}
 
