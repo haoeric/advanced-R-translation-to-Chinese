@@ -293,7 +293,7 @@ z$value
 
 1.  之前有种如下的代码演示`structure()`的使用：
 
-    ```{r}
+    ```r
     structure(1:5, comment = "my attribute")
     ```
     可是打印出来确并看不到comment属性。为什么？属性消失了吗，或者有一些其他的特别之处？
