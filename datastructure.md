@@ -415,15 +415,15 @@ str(df)
 
 ### 测试和转换
 
-因为`data.frame`是一个S3类，因此它的类型是列表。查看一个对象是否为数据框，可以使用class()`或者更准确点使用`is.data.frame()`：
+因为`data.frame`是一个S3类，因此它的类型是列表。查看一个对象是否为数据框，可以使用`class()`或者更准确点使用`is.data.frame()`：
 
-```{r}
+```r
 typeof(df)
 class(df)
 is.data.frame(df)
 ```
 
-You can coerce an object to a data frame with `as.data.frame()`:
+你可是使用 `as.data.frame()`讲一个对象强制转换成数据框：
 
 * A vector will create a one-column data frame.
 
