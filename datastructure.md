@@ -204,13 +204,13 @@ attributes(sum(y))
 
 其中有三个最重要的属性是不会丢失的：
 
-* 名字，一个字符类向量存储每一个元素的名字。详见[名字](#vector-names)。
+* 名字，一个存储每一个元素名字的字符类向量。详见[名字](#vector-names)。
 
 * 维度，用来将向量转化成矩阵和数组，详见[矩阵和数组](#matrices-and-arrays)。
 
-* Class, used to implement the S3 object system, described in [S3](#s3).
- 
-Each of these attributes has a specific accessor function to get and set values. When working with these attributes, use `names(x)`, `dim(x)`, and `class(x)`, not `attr(x, "names")`, `attr(x, "dim")`, and `attr(x, "class")`.
+* 类，用在S3面相对象系统，详见[S3](#s3).
+
+以上三种属性有专门的函数来用来查看和设置其属性的值。分别是 `names(x)`，`dim(x)`和`class(x)`，注意这里不是用`attr(x, "names")`，`attr(x, "dim")`和`attr(x, "class")`。
 
 #### Names {#vector-names}
 
