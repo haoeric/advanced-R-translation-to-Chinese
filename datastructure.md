@@ -451,7 +451,8 @@ good <- data.frame(a = 1:2, b = c("a", "b"), stringsAsFactors = FALSE)
 str(good)
 ```
 
-The conversion rules for `cbind()` are complicated and best avoided by ensuring all inputs are of the same type.
+`cbind()`合并的转换规则比较复杂，最好使用的时候保证所有输入都是相同的类型。
+
 
 ### Special columns
 
