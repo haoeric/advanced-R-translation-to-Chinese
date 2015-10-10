@@ -222,9 +222,9 @@ attributes(sum(y))
 
 * 复制一个向量并添加名称属性：`x <- setNames(1:3, c("a", "b", "c"))`。
 
-Names don't have to be unique. However, character subsetting, described in [subsetting](#lookup-tables), is the most important reason to use names and it is most useful when the names are unique.
+一个向量的名字可以是重复的。然而无重复的名字属性对于R中便利的[取子集](#lookup-tables)操作来说非常关键。
 
-Not all elements of a vector need to have a name. If some names are missing, `names()` will return an empty string for those elements. If all names are missing, `names()` will return `NULL`.
+并不是一个向量中的所有元素都需要有名字。`names()`函数会对那些没有名字的向量元素返回一个空字符。如果所有的名字都缺失，那么`names()`函数会返回`NULL`。
 
 ```{r}
 y <- c(a = 1, 2, 3)
