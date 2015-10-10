@@ -494,7 +494,7 @@ dfm[2, "y"]
 
 1.  数据框拥有什么样的属性？
 
-1.  What does `as.matrix()` do when applied to a data frame with 
+2.  What does `as.matrix()` do when applied to a data frame with 
     columns of different types?
 
 1.  Can you have a data frame with 0 rows? What about 0 columns?
