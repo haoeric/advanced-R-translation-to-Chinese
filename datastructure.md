@@ -440,8 +440,7 @@ cbind(df, data.frame(z = 3:1))
 rbind(df, data.frame(x = 10, y = "z"))
 ```
 
-如果按列来合并，那么他们必须有相同的行数，行名称会被忽略。
-When combining column-wise, the number of rows must match, but row names are ignored. When combining row-wise, both the number and names of columns must match. Use `plyr::rbind.fill()` to combine data frames that don't have the same columns. 
+如果按列来合并，那么两个数据框必须要有相同的行数，行名称会被忽略。如果按行来合并，那么他们的列数和列名称都必须相同。你也可以使用`plyr::rbind.fill()`来合并拥有不同列数的数据框。
 
 It's a common mistake to try and create a data frame by `cbind()`ing vectors together. This doesn't work because `cbind()` will create a matrix unless one of the arguments is already a data frame. Instead use `data.frame()` directly:
 
