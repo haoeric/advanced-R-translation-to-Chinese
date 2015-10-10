@@ -504,12 +504,11 @@ dfm[2, "y"]
 
 2. 属性可以给任何对象添加任意的元数据。你可以通过`attr(x, "y")`和`attr(x, "y") <- value`来获取和设置一个属性；或者使用`attributes()`来获得和设置所有属性。
 
-3. 
+3. 一个列表的元素可以是任意类型（甚至是列表）；一个原向量的元素必须是相同的类型。同样的，矩阵的所有元素都必须是相同的类型；在数据框中，不同的列可以是不一样的类型。
+
+4. 你可以通过给一个列表添加维度来创建列表数组。你可以使用`df$x <- matrix()`或者`I()`（`data.frame(x = I(matrix()))`）来给一个数据框添加一个矩阵列。
 
 
-The four common types of atomic vector are logical, integer, double (sometimes called numeric), and character. The two rarer types are complex and raw.
-
-Attributes allow you to associate arbitrary additional metadata to any object. You can get and set individual attributes with attr(x, "y") and attr(x, "y") <- value; or get and set all attributes at once with attributes().
 
 The elements of a list can be any type (even a list); the elements of an atomic vector are all of the same type. Similarly, every element of a matrix must be the same type; in a data frame, the different columns can have different types.
 
