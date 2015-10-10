@@ -394,7 +394,7 @@ l
 
 在下一章[取子集](#subsetting)中，你会学到如何像一个列表一样对数据框取子集，也会学到像一个矩阵一样对数据框取子集。
 
-### Creation
+### 创建
 
 You create a data frame using `data.frame()`, which takes named vectors as input:
 
