@@ -500,7 +500,11 @@ dfm[2, "y"]
 
 ##答案{#data-structure-answers}
 
-The three properties of a vector are type, length, and attributes.
+1. 向量的三种特性分别是类型，长度和属性。
+
+2. 属性可以给任何对象添加任意的元数据。你可以通过`attr(x, "y")`和`attr(x, "y") <- value`来获取和设置一个属性；或者使用`attributes()`来获得和设置所有属性。
+2. 
+
 
 The four common types of atomic vector are logical, integer, double (sometimes called numeric), and character. The two rarer types are complex and raw.
 
