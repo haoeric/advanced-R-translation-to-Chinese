@@ -396,7 +396,7 @@ l
 
 ### 创建
 
-You create a data frame using `data.frame()`, which takes named vectors as input:
+你可以使用`data.frame()`函数来创建一个数据框，其输入是一个个有名字的向量：
 
 ```{r}
 df <- data.frame(x = 1:3, y = c("a", "b", "c"))
