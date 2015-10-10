@@ -376,9 +376,9 @@ l
 
 ### 练习
 
-1.  What does `dim()` return when applied to a vector?
+1.  对一个向量使用`dim()`将返回什么值?
 
-1.  If `is.matrix(x)` is `TRUE`, what will `is.array(x)` return?
+1.  如果`is.matrix(x)`返回`TRUE`，那么`is.array(x)`将返回什么？
 
 1.  How would you describe the following three objects? What makes them
     different to `1:5`?
