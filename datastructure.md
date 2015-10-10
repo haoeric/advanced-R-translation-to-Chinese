@@ -210,7 +210,7 @@ attributes(sum(y))
 
 * 类，用在S3面相对象系统，详见[S3](#s3).
 
-以上三种属性有专门的函数来用来查看和设置其属性的值。分别是 `names(x)`，`dim(x)`和`class(x)`，注意这里不是用`attr(x, "names")`，`attr(x, "dim")`和`attr(x, "class")`。
+以上三种属性有专门的函数来用来查看和设置其属性值，分别是 `names(x)`，`dim(x)`和`class(x)`，注意这里不是用`attr(x, "names")`，`attr(x, "dim")`和`attr(x, "class")`。
 
 #### Names {#vector-names}
 
