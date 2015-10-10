@@ -318,10 +318,10 @@ z$value
 
 矩阵和数组可以分别使用`matrix()`和`array()`来创建，或者通过使用`dim()`给原向量赋予维度来创建：
 
-```{r}
-# Two scalar arguments to specify rows and columns
+```r
+# 用两个标量参数来设置行数和列数
 a <- matrix(1:6, ncol = 3, nrow = 2)
-# One vector argument to describe all dimensions
+# 用一个向量来设置纬度
 b <- array(1:12, c(2, 3, 2))
 
 # You can also modify an object in place by setting dim()
