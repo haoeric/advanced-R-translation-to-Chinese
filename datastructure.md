@@ -466,13 +466,13 @@ df
 
 但是，当传递一个列表到`data.frame()`函数时，`data.frame()`会试图将列表中的每一个元素单独放到一列中，这时候就可能报错：
 
-```{r, error = TRUE}
+```r
 data.frame(x = 1:3, y = list(1:2, 1:3, 1:4))
 ```
 
-A workaround is to use `I()`, which causes `data.frame()` to treat the list as one unit:
+一种折中的解决方案是使用`I()`，这样`data.frame()`会把列表看成一个单元：
 
-```{r}
+```r
 dfl <- data.frame(x = 1:3, y = I(list(1:2, 1:3, 1:4)))
 str(dfl)
 dfl[2, "y"]
