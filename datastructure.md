@@ -356,7 +356,7 @@ b
 
 你可以使用`is.matrix()`和`is.array()`来检测一个对象是否为矩阵或则数组，使用`dim()`来检测该对象的纬度。使用`as.matrix()`或`as.array()`则可以将一个向量轻松地转换成矩阵或则数组。
 
-Vectors are not the only 1-dimensional data structure. You can have matrices with a single row or single column, or arrays with a single dimension. They may print similarly, but will behave differently. The differences aren't too important, but it's useful to know they exist in case you get strange output from a function (`tapply()` is a frequent offender). As always, use `str()` to reveal the differences. \index{arrays!1d}
+不仅仅是有向量是一维的数据结构。你也可以构建只有一行或一列的矩阵，或者只是一维的数组。他们打印出来可能很相似，可是操作起来确大不相同。这些不同不是很重要，可是知道有这些不同对于使用一些函数（比如`tapply()`）会非常有用。. As always, use `str()` to reveal the differences. \index{arrays!1d}
 
 ```{r}
 str(1:3)                   # 1d vector
