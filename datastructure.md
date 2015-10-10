@@ -478,15 +478,16 @@ str(dfl)
 dfl[2, "y"]
 ```
 
-`I()` adds the `AsIs` class to its input, but this can usually be safely ignored. \indexc{I()}
+`I()`函数会给它的输入添加`AsIs`类，但是你可以放心的忽略这一点。
 
-Similarly, it's also possible to have a column of a data frame that's a matrix or array, as long as the number of rows matches the data frame: \index{data frames!array in column}
+同样地，你也可以给数据框添加一个是矩阵或者向量的列，只要他们的行数和数据框的行数一致：
 
-```{r}
+```r
 dfm <- data.frame(x = 1:3, y = I(matrix(1:9, nrow = 3)))
 str(dfm)
 dfm[2, "y"]
 ```
+
 
 Use list and array columns with caution: many functions that work with data frames assume that all columns are atomic vectors. \index{data frames|)}
 
