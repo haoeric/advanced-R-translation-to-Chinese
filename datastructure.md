@@ -334,9 +334,9 @@ c
 
 `length()`和`names()`在矩阵和数组中也有对应的函数：
 
-* `length()`会概括一个矩阵的`nrow()`和`ncol()`信息，对于数组则概括`dim()`信息。
+* 在矩阵中和`length()`相对应的函数是`nrow()`和`ncol()`，在数组中和`length()`相对应的函数则是`dim()`。
 
-* `names()`会概括一个矩阵的`rownames()`和`colnames()`信息，对于数组则概括`dimnames()`信息。
+* 在矩阵中和`names()`相对应的函数是`rownames()`和`colnames()`信息，在数组中和`names()`相对应的函数则是`dimnames()`。
 
 ```r
 length(a)
