@@ -6,7 +6,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 * 六种类型的取子集。
 
-* 对不同数据类型对象取子集的不同Important differences in behaviour for different objects (e.g., vectors, 
+* 对不同数据类型（比如向量，列表，因子，矩阵和数据框）对象取子集的不同Important differences in behaviour for different objects (e.g., vectors, 
   lists, factors, matrices, and data frames).
 
 * The use of subsetting in conjunction with assignment.
