@@ -26,7 +26,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 1.  如果`x`是一个矩阵，`x[] <- 0`会得到什么结果，这和`x <- 0`的结果有什么不同？
 
-1.  How can you use a named vector to relabel categorical variables?
+1.  如何使用有名字的向量来重新标记分类变量？
 
 ##### Outline
 
