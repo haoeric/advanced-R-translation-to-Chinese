@@ -1,12 +1,12 @@
 # 取子集{#subsetting}
 
-R's subsetting operators are powerful and fast. Mastery of subsetting allows you to succinctly express complex operations in a way that few other languages can match. Subsetting is hard to learn because you need to master a number of interrelated concepts:
+R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁的方式对数据进行复杂的操作，这是其他语言所望成莫及的。R的取子集不是那么容易学习，这之前你需要先了解几个相关的概念：
 
-* The three subsetting operators.
+* 三种取子集系统。
 
-* The six types of subsetting.
+* 六种类型的取子集。
 
-* Important differences in behaviour for different objects (e.g., vectors, 
+* 对不同数据类型对象取子集的不同Important differences in behaviour for different objects (e.g., vectors, 
   lists, factors, matrices, and data frames).
 
 * The use of subsetting in conjunction with assignment.
