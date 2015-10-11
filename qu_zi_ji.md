@@ -24,8 +24,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 1.  什么时候需要使用`drop = FALSE`？
 
-1.  If `x` is a matrix, what does `x[] <- 0` do? How is it different to
-    `x <- 0`?
+1.  如果`x`是一个矩阵，`x[] <- 0`会得到什么结果，这和`x <- 0`的结果有什么不同？
 
 1.  How can you use a named vector to relabel categorical variables?
 
