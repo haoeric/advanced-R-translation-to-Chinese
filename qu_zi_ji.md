@@ -30,20 +30,20 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 ##### 概要
 
-* [Data types](#data-types) starts by teaching you about `[`. You'll start
+* [数据结构](#data-types) starts by teaching you about `[`. You'll start
   by learning the six types of data that you can use to subset atomic vectors.
   You'll then learn how those six data types act when used to subset lists,
   matrices, data frames, and S3 objects.
   
-* [Subsetting operators](#subsetting-operators) expands your knowledge of 
+* [取子集操作符](#subsetting-operators) expands your knowledge of 
   subsetting operators to include `[[` and `$`, focussing on the important
   principles of simplifying vs. preserving.
   
-* In [Subsetting and assignment](#subassignment) you'll learn the
+* In [取子集和分派](#subassignment) you'll learn the
   art of subassignment, combining subsetting and assignment to modify parts 
   of an object.
   
-* [Applications](#applications) leads you through eight important, but
+* [运用](#applications) leads you through eight important, but
   not obvious, applications of subsetting to solve problems that you
   often encounter in a data analysis.
 
