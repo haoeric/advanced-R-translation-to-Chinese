@@ -28,7 +28,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 1.  如何使用有名字的向量来重新标记分类变量？
 
-##### Outline
+##### 概要
 
 * [Data types](#data-types) starts by teaching you about `[`. You'll start
   by learning the six types of data that you can use to subset atomic vectors.
