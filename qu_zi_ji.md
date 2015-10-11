@@ -6,10 +6,9 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 * 六种类型的取子集。
 
-* 对不同数据类型（比如向量，列表，因子，矩阵和数据框）对象取子集的不同Important differences in behaviour for different objects (e.g., vectors, 
-  lists, factors, matrices, and data frames).
+* 对不同数据类型（比如向量，列表，因子，矩阵和数据框）取子集结果的不同。
 
-* The use of subsetting in conjunction with assignment.
+* 取子集和分派的结合使用。
 
 This chapter helps you master subsetting by starting with the simplest type of subsetting: subsetting an atomic vector with `[`. It then gradually extends your knowledge, first to more complicated data types (like arrays and lists), and then to the other subsetting operators, `[[` and `$`. You'll then learn how subsetting and assignment can be combined to modify parts of an object, and, finally, you'll see a large number of useful applications.
 
