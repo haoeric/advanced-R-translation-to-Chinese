@@ -674,7 +674,7 @@ When first learning subsetting, a common mistake is to use `x[which(y)]` instead
     
 1.  How could you put the columns in a data frame in alphabetical order?
 
-## Answers {#subsetting-answers}
+## 参考答案 {#subsetting-answers}
 
 1.  Positive integers select elements at specific positions, negative integers
     drop elements; logical vectors keep elements at positions corresponding to
