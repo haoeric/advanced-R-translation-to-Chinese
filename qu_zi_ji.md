@@ -16,8 +16,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 ##### 测试
 
-
-Take this short quiz to determine if you need to read this chapter. If the answers quickly come to mind, you can comfortably skip this chapter. Check your answers in [answers](#subsetting-answers).
+做做这个简单的测试看看你是否需要阅读本章内容。如果你能很快的的到答案，你可以轻松的跳过本章。本章最后提供[参考答案](#subsetting-answers)。
 
 1.  What is the result of subsetting a vector with positive integers, 
     negative integers, a logical vector, or a character vector?
