@@ -20,9 +20,9 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 1.  使用正数，负数，逻辑向量以及字符向量取子集分别有什么不同？
 
-1.  What's the difference between `[`, `[[`, and `$` when applied to a list?
+1.  对列表使用`[`，`[[`或则`$`有什么不同？
 
-1.  When should you use `drop = FALSE`?
+1.  什么时候需要使用`drop = FALSE`？
 
 1.  If `x` is a matrix, what does `x[] <- 0` do? How is it different to
     `x <- 0`?
