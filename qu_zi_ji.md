@@ -10,11 +10,11 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 * 取子集和分派的结合使用。
 
-This chapter helps you master subsetting by starting with the simplest type of subsetting: subsetting an atomic vector with `[`. It then gradually extends your knowledge, first to more complicated data types (like arrays and lists), and then to the other subsetting operators, `[[` and `$`. You'll then learn how subsetting and assignment can be combined to modify parts of an object, and, finally, you'll see a large number of useful applications.
+这章将帮助你一步一步掌握R的取子集操作。首先我们从最简单的取子集（即使用`[`对原向量取子集）开始讲解，然后慢慢展开，学习对较复杂的数据结构比如数组和列表取子集以及使用其他取子集操作符号，比如`[[`和`$`。接下来会讲解如何结合取子集和分派来修改对象的内容。最后我们来看看一些有用的取子集应用实例。
 
-Subsetting is a natural complement to `str()`. `str()` shows you the structure of any object, and subsetting allows you to pull out the pieces that you're interested in. \index{subsetting}
+取子集是`str()`函数的补充。`str()`函数帮助你了解对象的数据结构，取子集让你从对象中提取感兴趣的数据片段。
 
-##### Quiz
+##### 测试
 
 Take this short quiz to determine if you need to read this chapter. If the answers quickly come to mind, you can comfortably skip this chapter. Check your answers in [answers](#subsetting-answers).
 
