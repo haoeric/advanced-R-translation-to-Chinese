@@ -43,7 +43,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
   art of subassignment, combining subsetting and assignment to modify parts 
   of an object.
   
-* [运用](#applications) leads you through eight important, but
+* [实例运用](#applications) leads you through eight important, but
   not obvious, applications of subsetting to solve problems that you
   often encounter in a data analysis.
 
