@@ -49,36 +49,33 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 ## Data types {#data-types}
 
-学习原向量的取子集是最简单的，原向量的取子集操作可以很容易地引申到高维和其他更复杂的数据结构。我们将从最常用的取子集操作符`[`开始讲解。后面的[取子集操作符](#subsetting-operators)会介绍另外两种操作符，`[[`和`$`。
+学习原向量的取子集是最简单的，原向量的取子集操作可以很容易地被引申运用到高维和其他更复杂的数据结构。这里我们将从最常用的取子集操作符`[`开始讲解。后面的[取子集操作符](#subsetting-operators)一节会介绍另外两种操作符，`[[`和`$`。
 
-### Atomic vectors
+### 原向量
 
-Let's explore the different types of subsetting with a simple vector, `x`. \index{subsetting!atomic vectors} \index{atomic vectors!subsetting} \indexc{[}
+以下用一个简单的向量`x`来讲解不同的取子集方式。
 
-```{r}
+```r
 x <- c(2.1, 4.2, 3.3, 5.4)
 ```
 
-Note that the number after the decimal point gives the original position in the vector.
+注意：小数点后面的数实际标明了向量中元素的位置。
 
-There are five things that you can use to subset a vector: 
+你可以用如下五种方式对一个向量进行取子集操作：
 
-*   __Positive integers__ return elements at the specified positions: 
-    \index{subsetting!with positive integers}
-
-    ```{r}
+*   __正整数__ 返回向量中特定位置的元素： 
+    ```r
     x[c(3, 1)]
     x[order(x)]
 
-    # Duplicated indices yield duplicated values
+    # 重复的索引返回重复的值
     x[c(1, 1)]
 
-    # Real numbers are silently truncated to integers
+    # 实数默认被去尾为整数
     x[c(2.1, 2.9)]
     ```
 
-*   __Negative integers__ omit elements at the specified positions:
-    \index{subsetting!with negative integers}
+*   __负整数__ 去除向量中特定位置的元素：
 
     ```{r}
     x[-c(3, 1)]
