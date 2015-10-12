@@ -32,8 +32,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 * [数据结构](#data-types) 首先介绍如何使用`[`以及六种对原向量取子集的索引方法。然后讲解如何将这六种索引方法应用到列表，矩阵，数据框和S3对象。 
   
-* [取子集操作符](#subsetting-operators) expands your knowledge of 
-  subsetting operators to include `[[` and `$`, focussing on the important
+* [取子集操作符](#subsetting-operators) 介绍另外两种取子集操作符`[[`和`$`， , focussing on the important
   principles of simplifying vs. preserving.
   
 * In [取子集和分派](#subassignment) you'll learn the
@@ -175,23 +174,21 @@ vals[select]
 
 ### 数据框 {#df-subsetting}
 
-Data frames possess the characteristics of both lists and matrices: if you subset with a single vector, they behave like lists; if you subset with two vectors, they behave like matrices. \index{subsetting!data frames} \index{data frames!subsetting}
+数据框同时拥有列表和矩阵的特性：如果你用单个向量来取子集，那么数据框就表现为列表；如果使用两个向量，数据框则表现为矩阵。
 
-```{r}
+```r
 df <- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
 
 df[df$x == 2, ]
 df[c(1, 3), ]
 
-# There are two ways to select columns from a data frame
-# Like a list:
+# 有两种方法对一个数据框的列取子集
+# 同列表一样
 df[c("x", "z")]
-# Like a matrix
+# 同矩阵一样
 df[, c("x", "z")]
 
-# There's an important difference if you select a single 
-# column: matrix subsetting simplifies by default, list 
-# subsetting does not.
+# 如果紧取数据框的一列：使用同矩阵一样的方法则返回值会被简化## 为向量，但是使用同列表一样方法则不会简化。
 str(df["x"])
 str(df[, "x"])
 ```
