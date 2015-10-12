@@ -400,7 +400,7 @@ list()[[NULL]]
 
 All subsetting operators can be combined with assignment to modify selected values of the input vector. \index{subsetting!subassignment} \index{assignment!subassignment}
 
-```{r, error = TRUE}
+```r
 x <- 1:5
 x[c(1, 2)] <- 2:3
 x
@@ -445,7 +445,7 @@ y["b"] <- list(NULL)
 str(y)
 ```
 
-## Applications {#applications}
+## 实例运用 {#applications}
 
 The basic principles described above give rise to a wide variety of useful applications. Some of the most important are described below. Many of these basic techniques are wrapped up into more concise functions (e.g., `subset()`, `merge()`, `plyr::arrange()`), but it is useful to understand how they are implemented with basic subsetting. This will allow you to adapt to new situations that are not dealt with by existing functions.
 
