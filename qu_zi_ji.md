@@ -30,10 +30,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 ##### 概要
 
-* [数据结构](#data-types) 首先教你如何使用`[`。. You'll start
-  by learning the six types of data that you can use to subset atomic vectors.
-  You'll then learn how those six data types act when used to subset lists,
-  matrices, data frames, and S3 objects.
+* [数据结构](#data-types) 首先介绍如何使用`[`以及六种对原向量取子集的方法。然后讲解如何六种方法应用到列表，矩阵，数据框和S3对象。 
   
 * [取子集操作符](#subsetting-operators) expands your knowledge of 
   subsetting operators to include `[[` and `$`, focussing on the important
