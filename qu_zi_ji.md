@@ -201,7 +201,7 @@ S3对象是由原向量，数组和列表构成的，因此你可以使用上面
 
 对于S4对象有另外的两种取子集的操作符：`@`(等同于`$`)和`slot()`(等同于`[[`)。`@`相对于`$`更严谨，如果对应所取位置不存在则会报错。这在[面相对象指南](#s4)一章中会详细介绍。
 
-### Exercises
+### 练习
 
 1.  Fix each of the following common data frame subsetting errors:
 
