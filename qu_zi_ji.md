@@ -81,9 +81,9 @@ x <- c(2.1, 4.2, 3.3, 5.4)
     x[-c(3, 1)]
     ```
 
-    You can't mix positive and negative integers in a single subset:
+    正整数和负整数可以在同一个取子集操作中结合使用：
 
-    ```{r, error = TRUE}
+    ```r
     x[c(-1, 2)]
     ```
 
