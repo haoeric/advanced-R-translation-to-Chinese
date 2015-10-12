@@ -153,7 +153,7 @@ a[0, -2]
 ```
 
 
-By default, `[` will simplify the results to the lowest possible dimensionality. See [simplifying vs. preserving](#simplify-preserve) to learn how to avoid this.
+By default, `[` will simplify the results to the lowest possible dimensionality. See [简化与保留](#simplify-preserve) to learn how to avoid this.
 
 Because matrices and arrays are implemented as vectors with special attributes, you can subset them with a single vector. In that case, they will behave like a vector. Arrays in R are stored in column-major order:
 
