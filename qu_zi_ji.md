@@ -212,13 +212,11 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
     mtcars[mtcars$cyl == 4 | 6, ]
     ```
 
-1.  Why does `x <- 1:5; x[NA]` yield five missing values? (Hint: why is 
-    it different from `x[NA_real_]`?)
+1.  为什么`x <- 1:5; x[NA]`会返回五个缺失值？（提示：这和`x[NA_real_]`有什么不同)
 
-1.  What does `upper.tri()` return? How does subsetting a matrix with it 
-    work? Do we need any additional subsetting rules to describe its behaviour?
+1.  `upper.tri()`返回什么值？使用它对矩阵取子集是如何操作的？我们需要其他的取子集原则来描述它么？
 
-    ```{r, eval = FALSE}
+    ```r
     x <- outer(1:5, 1:5, FUN = "*")
     x[upper.tri(x)]
     ```
