@@ -161,8 +161,7 @@ a[0, -2]
 vals[c(4, 15)]
 ```
 
-
-You can also subset higher-dimensional data structures with an integer matrix (or, if named, a character matrix). Each row in the matrix specifies the location of one value, where each column corresponds to a dimension in the array being subsetted. This means that you use a 2 column matrix to subset a matrix, a 3 column matrix to subset a 3d array, and so on. The result is a vector of values:
+你也可以使用整形矩阵来对高维数据进行取子集（如果高维数据有名字属性，也可以使用字符类矩阵）。矩阵中的每一行标明一个元素的坐标，每一列则对应着该高维数据的一个维度。也就是说，你要使用一个两列的矩阵来对一个矩阵取子集，一个三列的矩阵来对一个三维数组来取子集，依此类推。输出的结果是一个向量：
 
 ```{r}
 vals <- outer(1:5, 1:5, FUN = "paste", sep = ",")
