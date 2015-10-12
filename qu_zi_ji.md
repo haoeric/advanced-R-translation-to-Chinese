@@ -87,10 +87,7 @@ x <- c(2.1, 4.2, 3.3, 5.4)
     x[c(-1, 2)]
     ```
 
-*   __Logical vectors__ select elements where the corresponding logical 
-    value is `TRUE`. This is probably the most useful type of subsetting
-    because you write the expression that creates the logical vector:
-    \index{subsetting!with logical vectors}
+*   __逻辑向量__ 选择对应值为`TRUE`的元素。这可能是最有用的取子集操作，因为你在代码中通常返回的是逻辑向量。
 
     ```{r}
     x[c(TRUE, TRUE, FALSE, FALSE)]
