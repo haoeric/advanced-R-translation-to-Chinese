@@ -30,7 +30,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 ##### 概要
 
-* [数据结构](#data-types) starts by teaching you about `[`. You'll start
+* [数据结构](#data-types) 首先教你如何使用`[`。. You'll start
   by learning the six types of data that you can use to subset atomic vectors.
   You'll then learn how those six data types act when used to subset lists,
   matrices, data frames, and S3 objects.
@@ -49,7 +49,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 ## Data types {#data-types}
 
-It's easiest to learn how subsetting works for atomic vectors, and then how it generalises to higher dimensions and other more complicated objects. We'll start with `[`, the most commonly used operator. [Subsetting operators](#subsetting-operators) will cover `[[` and `$`, the two other main subsetting operators.
+学习原向量的取子集是最简单的，原向量的取子集操作可以很容易地引申到高维和其他更复杂的数据结构。我们将从最常用的取子集操作符`[`开始讲解。后面的[取子集操作符](#subsetting-operators)会介绍另外两种操作符，`[[`和`$`。
 
 ### Atomic vectors
 
@@ -251,7 +251,7 @@ There are also two additional subsetting operators that are needed for S4 object
 
 1.  What does `df[is.na(df)] <- 0` do? How does it work?
 
-## Subsetting operators {#subsetting-operators}
+## 取子集操作符 {#subsetting-operators}
 
 There are two other subsetting operators: `[[` and `$`. `[[` is similar to `[`, except it can only return a single value and it allows you to pull pieces out of a list. `$` is a useful shorthand for `[[` combined with character subsetting. \indexc{[[} \indexc{\$}
 
