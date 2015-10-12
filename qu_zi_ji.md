@@ -396,7 +396,7 @@ list()[[NULL]]
 
 <!-- FIXME: more examples -->
 
-## Subsetting and assignment {#subassignment}
+## 取子集与分派 {#subassignment}
 
 All subsetting operators can be combined with assignment to modify selected values of the input vector. \index{subsetting!subassignment} \index{assignment!subassignment}
 
