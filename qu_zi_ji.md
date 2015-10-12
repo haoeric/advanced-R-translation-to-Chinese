@@ -30,7 +30,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 ##### 概要
 
-* [数据结构](#data-types) 首先介绍如何使用`[`以及六种对原向量取子集的方法。然后讲解如何六种方法应用到列表，矩阵，数据框和S3对象。 
+* [数据结构](#data-types) 首先介绍如何使用`[`以及六种对原向量取子集的方法。然后讲解如何将这六种方法应用到列表，矩阵，数据框和S3对象。 
   
 * [取子集操作符](#subsetting-operators) expands your knowledge of 
   subsetting operators to include `[[` and `$`, focussing on the important
@@ -104,22 +104,19 @@ x <- c(2.1, 4.2, 3.3, 5.4)
     x[c(TRUE, TRUE, NA, FALSE)]
     ```
 
-*   __空__ returns the original vector. This is not useful 
-   for vectors but is very useful for matrices, data frames, and arrays. It 
-   can also be useful in conjunction with assignment.
+*   __空__ 返回原向量。这对向量取子集没有什么用处，可是对于矩阵，数据框和数组却非常有用。并且还可以和分派联合使用。
 
-    ```{r}
+    ```r
     x[]
     ```
 
-*   __零__ returns a zero-length vector. This is not something you 
-    usually do on purpose, but it can be helpful for generating test data.
+*   __零__ 返回一个长度为零的向量。这个不常用，但是可以用来生成测试数据。
 
-    ```{r}
+    ```r
     x[0]
     ```
 
-If the vector is named, you can also use:
+如果向量有名字，你也可以使用如下方法：
 
 *   __字符向量__ to return elements with matching names.
     \index{subsetting!with character vectors}
