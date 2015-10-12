@@ -132,7 +132,7 @@ x <- c(2.1, 4.2, 3.3, 5.4)
     z[c("a", "d")]
     ```
 
-### Lists
+### 列表
 
 Subsetting a list works in the same way as subsetting an atomic vector. Using `[` will always return a list; `[[` and `$`, as described below, let you pull out the components of the list.  \index{lists!subsetting} \index{subsetting!lists}
 
