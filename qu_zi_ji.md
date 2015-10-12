@@ -88,13 +88,12 @@ x <- c(2.1, 4.2, 3.3, 5.4)
 
 *   __逻辑向量__ 选择对应值为`TRUE`的元素。这可能是最有用的取子集操作，因为你在代码中常常得到逻辑向量。
 
-    ```{r}
+    ```r
     x[c(TRUE, TRUE, FALSE, FALSE)]
     x[x > 3]
     ```
 
-    If the logical vector is shorter than the vector being subsetted, it 
-    will be _recycled_ to be the same length.
+    如果实用的逻辑向量的长度比被取子集的向量长度短，逻辑向量会被_循环_到与该向量相同的长度。
 
     ```{r}
     x[c(TRUE, FALSE)]
