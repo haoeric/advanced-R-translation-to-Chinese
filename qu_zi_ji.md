@@ -195,11 +195,11 @@ str(df[, "x"])
 
 ### S3对象
 
-S3 objects are made up of atomic vectors, arrays, and lists, so you can always pull apart an S3 object using the techniques described above and the knowledge you gain from `str()`. \index{subsetting!S3} \index{S3!subsetting}
+S3对象是由原向量，数组和列表构成的，因此你可以使用上面介绍的方法以及`str()`的帮助来对S3对象取子集。
 
-### S4 objects
+### S4对象
 
-There are also two additional subsetting operators that are needed for S4 objects: `@` (equivalent to `$`), and `slot()` (equivalent to `[[`). `@` is more restrictive than `$` in that it will return an error if the slot does not exist. These are described in more detail in [the OO field guide](#s4). \index{subsetting!S4} \index{S4!subsetting} \indexc{@}
+对于S4对象有另外的两种取子集的操作符：`@`(等同于`$`)和`slot()`(等同于`[[`)。`@`相对于`$`更严谨，如果对应所取位置不存在则会报错。这在[面相对象指南](#s4)一章中会详细介绍。
 
 ### Exercises
 
