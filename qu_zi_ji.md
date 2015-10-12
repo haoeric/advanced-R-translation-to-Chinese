@@ -136,15 +136,15 @@ x <- c(2.1, 4.2, 3.3, 5.4) ＃注意：小数点后面的数实际标明了向�
 
 ### 矩阵和数组 {#matrix-subsetting}
 
-You can subset higher-dimensional structures in three ways: \index{subsetting!arrays} \index{arrays!subsetting}
+可以使用如下三种方法对高纬数据取子集：
 
-* With multiple vectors.
-* With a single vector.
-* With a matrix.
+* 多向量
+* 单向量
+* 矩阵
 
-The most common way of subsetting matrices (2d) and arrays (>2d) is a simple generalisation of 1d subsetting: you supply a 1d index for each dimension, separated by a comma. Blank subsetting is now useful because it lets you keep all rows or all columns.
+最常用的对矩阵和数组取子集就是对一维向量取子集的简单衍生：对每一个维度提供一个用逗号彼此隔开的索引。空索引则意味着保留该行，或则该列。
 
-```{r}
+```r
 a <- matrix(1:9, nrow = 3)
 colnames(a) <- c("A", "B", "C")
 a[1:2, ]
