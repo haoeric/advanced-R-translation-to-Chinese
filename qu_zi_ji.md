@@ -101,13 +101,13 @@ x <- c(2.1, 4.2, 3.3, 5.4)
     x[c(TRUE, FALSE, TRUE, FALSE)]
     ```
 
-    A missing value in the index always yields a missing value in the output:
+    索引中如果出现缺失值，结果中也会对应返回缺失值：
 
-    ```{r}
+    ```r
     x[c(TRUE, TRUE, NA, FALSE)]
     ```
 
-*   __Nothing__ returns the original vector. This is not useful 
+*   __空__ returns the original vector. This is not useful 
    for vectors but is very useful for matrices, data frames, and arrays. It 
    can also be useful in conjunction with assignment.
 
@@ -115,7 +115,7 @@ x <- c(2.1, 4.2, 3.3, 5.4)
     x[]
     ```
 
-*   __Zero__ returns a zero-length vector. This is not something you 
+*   __零__ returns a zero-length vector. This is not something you 
     usually do on purpose, but it can be helpful for generating test data.
 
     ```{r}
@@ -124,7 +124,7 @@ x <- c(2.1, 4.2, 3.3, 5.4)
 
 If the vector is named, you can also use:
 
-*   __Character vectors__ to return elements with matching names.
+*   __字符向量__ to return elements with matching names.
     \index{subsetting!with character vectors}
 
     ```{r}
