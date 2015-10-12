@@ -161,6 +161,7 @@ a[0, -2]
 vals[c(4, 15)]
 ```
 
+
 You can also subset higher-dimensional data structures with an integer matrix (or, if named, a character matrix). Each row in the matrix specifies the location of one value, where each column corresponds to a dimension in the array being subsetted. This means that you use a 2 column matrix to subset a matrix, a 3 column matrix to subset a 3d array, and so on. The result is a vector of values:
 
 ```{r}
