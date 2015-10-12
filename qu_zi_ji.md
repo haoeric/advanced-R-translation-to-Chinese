@@ -154,9 +154,8 @@ a[0, -2]
 
 默认情况下，使用`[`会简化结果到最少维度。查看[简化与保留](#simplify-preserve)一节来学习如何避免这种情况。
 
-Because matrices and arrays are implemented as vectors with special attributes, you can subset them with a single vector. In that case, they will behave like a vector. Arrays in R are stored in column-major order:
-
-```{r}
+因为矩阵和数组是由带特殊属性的向量构建成的，这也就意味着你也可以使用一个简单的向量来对它们进行取子集。那样它们会被视为数组。在R中数组是按列优先顺序存储的：
+```r
 (vals <- outer(1:5, 1:5, FUN = "paste", sep = ","))
 vals[c(4, 15)]
 ```
