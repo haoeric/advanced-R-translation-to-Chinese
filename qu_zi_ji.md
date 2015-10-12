@@ -132,9 +132,9 @@ x <- c(2.1, 4.2, 3.3, 5.4) ＃注意：小数点后面的数实际标明了向�
 
 ### 列表
 
-Subsetting a list works in the same way as subsetting an atomic vector. Using `[` will always return a list; `[[` and `$`, as described below, let you pull out the components of the list.  \index{lists!subsetting} \index{subsetting!lists}
+对列表取子集与对原向量原理相同。使用`[`将会始终返回一个向量；后面要讲解的`[[`和`$`则会提取一个向量中的元素。
 
-### Matrices and arrays {#matrix-subsetting}
+### 矩阵和数组 {#matrix-subsetting}
 
 You can subset higher-dimensional structures in three ways: \index{subsetting!arrays} \index{arrays!subsetting}
 
