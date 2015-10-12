@@ -44,7 +44,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
   not obvious, applications of subsetting to solve problems that you
   often encounter in a data analysis.
 
-## Data types {#data-types}
+## 索引类型 {#data-types}
 
 学习原向量的取子集是最简单的，原向量的取子集操作可以很容易地被引申运用到高维和其他更复杂的数据结构。这里我们将从最常用的取子集操作符`[`开始讲解。后面的[取子集操作符](#subsetting-operators)一节会介绍另外两种操作符，`[[`和`$`。
 
