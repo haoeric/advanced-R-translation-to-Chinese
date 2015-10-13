@@ -263,13 +263,13 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 如何切换简化或则保留因数据类型的差异而不同。具体的操作概括如下表：
 
-|             |      简化        |      保留          |
-|-------------|------------------|--------------------|
+|         |           简化            |      保留   |
+|---------|---------------------------|---------------|
 | 向量    | `x[[1]]`                  | `x[1]`        |
 | 列表    | `x[[1]]`                  | `x[1]`        |
-| 因子    | `x[1:4, drop = T]` | `x[1:4]`             |
+| 因子    | `x[1:4, drop = T]`        | `x[1:4]`      |
 | 数组    | `x[1, ]` __or__ `x[, 1]`  | `x[1, , drop = F]` __or__ `x[, 1, drop = F]` |
-| 数据框  | `x[, 1]` __or__ `x[[1]]`  | `x[, 1, drop = F]` __or__ `x[1]`  |
+| 数据框  | `x[, 1]` __or__ `x[[1]]`  | `x[, 1, drop = F]` __or__ `x[1]`             |
 
 Preserving is the same for all data types: you get the same type of output as input. Simplifying behaviour varies slightly between different data types, as described below:
 
