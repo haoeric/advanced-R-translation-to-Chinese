@@ -254,13 +254,12 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 因为数据框本质上是由多个列向量构成的列表，所以你也可以使用`[[`来提取数据框中的某一列，比如`mtcars[[1]]`，`mtcars[["cyl"]]`。
 
-使用`[`或`[[`对S3和S4对象进行操作时，他们的结果会因受对象的重写而不同。关键的不同在于简化与保留，以及对象的默认操作。
+使用`[`或`[[`对S3和S4对象进行操作时，他们的结果会因受对象的重写而不同。关键的不同在于简化与保留。所以知道什么是默认操作很重要。
 
 
 ### 简化与保留 {#simplify-preserve}
 
-理解简化与保留的不同非常重要。对结果进行简化会将输出信息转化为最简单的数据结构。简化有时候很有用，因为很多时候简化后的返回值会恰好是你想要的结构。对结构进行保留则会保证输出与输入的数据结构类型一致。
-It's important to understand the distinction between simplifying and preserving subsetting. Simplifying subsets returns the simplest possible data structure that can represent the output, and is useful interactively because it usually gives you what you want. Preserving subsetting keeps the structure of the output the same as the input, and is generally better for programming because the result will always be the same type. Omitting `drop = FALSE` when subsetting matrices and data frames is one of the most common sources of programming errors. (It will work for your test cases, but then someone will pass in a single column data frame and it will fail in an unexpected and unclear way.) \indexc{drop = FALSE} \index{subsetting!simplifying} \index{subsetting!preserving}
+理解简化与保留的不同非常重要。对结果进行简化会将输出信息转化为最简单的数据结构。简化有时候很有用，因为很多时候简化后的返回值会恰好是你想要的结构。对结构进行保留则会保证输出与输入的数据结构类型一致，这对提高程序的稳定性非常重要。在对矩阵和数据框取子集时忽略`drop = FALSE`是导致程序出错的一种常见原因。（可能在你的测试数据中不会有错误，当别人输入单列的数据框时则会出现错误）
 
 Unfortunately, how you switch between simplifying and preserving differs for different data types, as summarised in the table below.
 
