@@ -275,15 +275,15 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 *   __原向量__：去除名字
 
-    ```{r}
+    ```r
     x <- c(a = 1, b = 2)
     x[1]
     x[[1]]
     ```
 
-*   __列表__: return the object inside the list, not a single element list.
+*   __列表__：返回列表中的元素而不是单个元素的列表。
 
-    ```{r}
+    ```r
     y <- list(a = 1, b = 2)
     str(y[1])
     str(y[[1]])
