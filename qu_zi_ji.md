@@ -230,7 +230,7 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
 
 ## 取子集操作符 {#subsetting-operators}
 
-There are two other subsetting operators: `[[` and `$`. `[[` is similar to `[`, except it can only return a single value and it allows you to pull pieces out of a list. `$` is a useful shorthand for `[[` combined with character subsetting. \indexc{[[} \indexc{\$}
+另外两种取子集操作符分别是`[[`和`$`。 `[[` is similar to `[`, except it can only return a single value and it allows you to pull pieces out of a list. `$` is a useful shorthand for `[[` combined with character subsetting. \indexc{[[} \indexc{\$}
 
 You need `[[` when working with lists. This is because when `[` is applied to a list it always returns a list: it never gives you the contents of the list. To get the contents, you need `[[`:
 
