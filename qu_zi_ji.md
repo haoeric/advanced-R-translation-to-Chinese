@@ -32,8 +32,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 * [数据结构](#data-types) 首先介绍如何使用`[`以及六种对原子向量取子集的索引方法。然后讲解如何将这六种索引方法应用到列表，矩阵，数据框和S3对象。 
   
-* [取子集操作符](#subsetting-operators) 介绍另外两种取子集操作符`[[`和`$`， , focussing on the important
-  principles of simplifying vs. preserving.
+* [取子集操作符](#subsetting-operators) 介绍另外两种取子集操作符`[[`和`$`，着重介绍简化与保留的原则。
   
 * In [取子集和分派](#subassignment) you'll learn the
   art of subassignment, combining subsetting and assignment to modify parts 
