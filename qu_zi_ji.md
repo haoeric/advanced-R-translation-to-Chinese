@@ -321,12 +321,12 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 使用`$`的一个常用错误是使用一个变量替代某一列的名字：
 
-```{r}
+```r
 var <- "cyl"
 # Doesn't work - mtcars$var translated to mtcars[["var"]]
 mtcars$var
 
-# Instead use [[
+# 换用[[
 mtcars[[var]]
 ```
 
