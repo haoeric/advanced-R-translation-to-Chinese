@@ -272,9 +272,8 @@ b[["a"]][["b"]][["c"]][["d"]]
 | 数据框  | `x[, 1]` __or__ `x[[1]]`  | `x[, 1, drop = F]` __or__ `x[1]`             |
 
 保留操作对于所有数据类型都是一样的：你得到和输入同样类型的输出。简化操作则对不同的数据类型会有些不同：
-Preserving is the same for all data types: you get the same type of output as input. Simplifying behaviour varies slightly between different data types, as described below:
 
-*   __Atomic vector__: removes names.
+*   __原向量__: removes names.
 
     ```{r}
     x <- c(a = 1, b = 2)
@@ -282,7 +281,7 @@ Preserving is the same for all data types: you get the same type of output as in
     x[[1]]
     ```
 
-*   __List__: return the object inside the list, not a single element list.
+*   __列表__: return the object inside the list, not a single element list.
 
     ```{r}
     y <- list(a = 1, b = 2)
@@ -290,7 +289,7 @@ Preserving is the same for all data types: you get the same type of output as in
     str(y[[1]])
     ```
 
-*   __Factor__: drops any unused levels.
+*   __因子__: drops any unused levels.
 
     ```{r}
     z <- factor(c("a", "b"))
@@ -298,7 +297,7 @@ Preserving is the same for all data types: you get the same type of output as in
     z[1, drop = TRUE]
     ```
 
-*   __Matrix__ or __array__: if any of the dimensions has length 1, 
+*   __矩阵__或__数组__: if any of the dimensions has length 1, 
     drops that dimension.
 
     ```{r}
@@ -307,7 +306,7 @@ Preserving is the same for all data types: you get the same type of output as in
     a[1, ]
     ```
 
-*   __Data frame__: if output is a single column, returns a vector instead of 
+*   __数据框__: if output is a single column, returns a vector instead of 
     a data frame.
 
     ```{r}
