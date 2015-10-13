@@ -245,10 +245,10 @@ a <- list(a = 1, b = 2)
 a[[1]]
 a[["a"]]
 
-# If you do supply a vector it indexes recursively
+# 如果[[里是一个向量则会迭代索引
 b <- list(a = list(b = list(c = list(d = 1))))
 b[[c("a", "b", "c", "d")]]
-# 
+# 等同于
 b[["a"]][["b"]][["c"]][["d"]]
 ```
 
