@@ -323,7 +323,7 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 ```r
 var <- "cyl"
-# Doesn't work - mtcars$var translated to mtcars[["var"]]
+# mtcars$var等同于mtcars[["var"]]，这样返回null
 mtcars$var
 
 # 换用[[
@@ -332,7 +332,7 @@ mtcars[[var]]
 
 There's one important difference between `$` and `[[`. `$` does partial matching:
 
-```{r}
+```r
 x <- list(abc = 1)
 x$a
 x[["a"]]
