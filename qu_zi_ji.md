@@ -221,11 +221,9 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
     x[upper.tri(x)]
     ```
 
-1.  Why does `mtcars[1:20]` return an error? How does it differ from the 
-    similar `mtcars[1:20, ]`?
+1.  为什么`mtcars[1:20]`会报错，它和`mtcars[1:20, ]`有什么不同？
 
-1.  Implement your own function that extracts the diagonal entries from a
-    matrix (it should behave like `diag(x)` where `x` is a matrix).
+1.  自己编写一个对矩阵取对角元素的函数（要和对矩阵`x`使用`diag(x)`的返回值相同）。
 
 1.  What does `df[is.na(df)] <- 0` do? How does it work?
 
