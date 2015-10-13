@@ -241,7 +241,7 @@ You need `[[` when working with lists. This is because when `[` is applied to a 
 
 Because it can return only a single value, you must use `[[` with either a single positive integer or a string: \index{subsetting!lists} \index{lists!subsetting}
 
-```{r}
+```r
 a <- list(a = 1, b = 2)
 a[[1]]
 a[["a"]]
