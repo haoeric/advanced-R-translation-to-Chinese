@@ -236,7 +236,7 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
 
 > “如果列表`x`是一个满载货物的火车，`x[[5]]`表示在第五节车厢
 > 中的货物，而`x[4:6]`则表示由四，五，六号车厢组成的小火车。”
-> --- @RLangTip
+>                                               --- @RLangTip
 
 Because it can return only a single value, you must use `[[` with either a single positive integer or a string: \index{subsetting!lists} \index{lists!subsetting}
 
