@@ -361,7 +361,7 @@ str(x[NULL])
 
 如果输入向量有名字，那么出界索引(OOB)或缺失索引的名字为`"<NA>"`。
 
-```{r, eval = FALSE, echo = FALSE}
+```r
 numeric()[1]
 numeric()[NA_real_]
 numeric()[NULL]
