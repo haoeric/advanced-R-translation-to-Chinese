@@ -252,7 +252,7 @@ b[[c("a", "b", "c", "d")]]
 b[["a"]][["b"]][["c"]][["d"]]
 ```
 
-Because data frames are lists of columns, you can use `[[` to extract a column from data frames: `mtcars[[1]]`, `mtcars[["cyl"]]`. \index{subsetting!data frames} \index{data frames!subsetting}
+因为数据框本质上是由多个列向量构成的列表，所以你也可以使用`[[`来提取数据框中的某一列，比如`mtcars[[1]]`，`mtcars[["cyl"]]`。
 
 S3 and S4 objects can override the standard behaviour of `[` and `[[` so they behave differently for different types of objects. The key difference is usually how you select between simplifying or preserving behaviours, and what the default is.
 
