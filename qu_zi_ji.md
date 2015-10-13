@@ -238,7 +238,7 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
 > 中的货物，而`x[4:6]`则表示由四，五，六号车厢组成的小火车。”
 >                                               --- @RLangTip
 
-Because it can return only a single value, you must use `[[` with either a single positive integer or a string: \index{subsetting!lists} \index{lists!subsetting}
+因为使用`[[`只能返回单个值，所以使用的索引必须是正整数或者字符。
 
 ```r
 a <- list(a = 1, b = 2)
