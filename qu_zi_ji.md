@@ -227,6 +227,7 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
 
 1.  `df[is.na(df)] <- 0`做了什么操作，怎么解释这个代码？
 
+
 ## 取子集操作符 {#subsetting-operators}
 
 There are two other subsetting operators: `[[` and `$`. `[[` is similar to `[`, except it can only return a single value and it allows you to pull pieces out of a list. `$` is a useful shorthand for `[[` combined with character subsetting. \indexc{[[} \indexc{\$}
