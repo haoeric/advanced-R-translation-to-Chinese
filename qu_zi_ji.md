@@ -319,7 +319,7 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 `$`是一个简化操作符，`x$y`等同于`x[["y", exact = FALSE]]`。多用于对数据框取子集，比如`mtcars$cyl`和`diamonds$carat`。
 
-One common mistake with `$` is to try and use it when you have the name of a column stored in a variable:
+使用`$`的一个常用错误是使用一个变量替代某一列的名字：
 
 ```{r}
 var <- "cyl"
