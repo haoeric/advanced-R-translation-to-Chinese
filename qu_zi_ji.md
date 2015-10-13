@@ -248,7 +248,7 @@ a[["a"]]
 # If you do supply a vector it indexes recursively
 b <- list(a = list(b = list(c = list(d = 1))))
 b[[c("a", "b", "c", "d")]]
-# Same as
+# 
 b[["a"]][["b"]][["c"]][["d"]]
 ```
 
