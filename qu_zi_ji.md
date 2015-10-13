@@ -203,9 +203,9 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
 
 ### 练习
 
-1.  Fix each of the following common data frame subsetting errors:
+1.  找出并修改如下代码中的错误：
 
-    ```{r, eval = FALSE}
+    ```r
     mtcars[mtcars$cyl = 4, ]
     mtcars[-1:4, ]
     mtcars[mtcars$cyl <= 5]
