@@ -256,6 +256,7 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 使用`[`或`[[`对S3和S4对象进行操作时，他们的结果会因受对象的重写而不同。关键的不同在于简化与保留，以及对象的默认操作。
 
+
 ### 简化与保留 {#simplify-preserve}
 
 It's important to understand the distinction between simplifying and preserving subsetting. Simplifying subsets returns the simplest possible data structure that can represent the output, and is useful interactively because it usually gives you what you want. Preserving subsetting keeps the structure of the output the same as the input, and is generally better for programming because the result will always be the same type. Omitting `drop = FALSE` when subsetting matrices and data frames is one of the most common sources of programming errors. (It will work for your test cases, but then someone will pass in a single column data frame and it will fail in an unexpected and unclear way.) \indexc{drop = FALSE} \index{subsetting!simplifying} \index{subsetting!preserving}
