@@ -261,15 +261,15 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 理解简化与保留的不同非常重要。对结果进行简化会将输出信息转化为最简单的数据结构。简化有时候很有用，因为很多时候简化后的返回值会恰好是你想要的结构。对结构进行保留则会保证输出与输入的数据结构类型一致，这对提高程序的稳定性非常重要。在对矩阵和数据框取子集时忽略`drop = FALSE`是导致程序出错的一种常见原因。（可能在你的测试数据中不会有错误，当别人输入单列的数据框时则会出现错误）
 
-Unfortunately, how you switch between simplifying and preserving differs for different data types, as summarised in the table below.
+如何切换简化或则保留因数据类型的差异而不同。具体的操作概括如下表：
 
 |             |      简化        |      保留          |
 |-------------|------------------|--------------------|
-| Vector      | `x[[1]]`                  | `x[1]`                                       |
-| List        | `x[[1]]`                  | `x[1]`                                       |
-| Factor      | `x[1:4, drop = T]`        | `x[1:4]`                                     |
-| Array       | `x[1, ]` __or__ `x[, 1]`  | `x[1, , drop = F]` __or__ `x[, 1, drop = F]` |
-| Data frame  | `x[, 1]` __or__ `x[[1]]`  | `x[, 1, drop = F]` __or__ `x[1]`             |
+| 向量    | `x[[1]]`                  | `x[1]`        |
+| 列表    | `x[[1]]`                  | `x[1]`        |
+| 因子    | `x[1:4, drop = T]` | `x[1:4]`             |
+| 数组    | `x[1, ]` __or__ `x[, 1]`  | `x[1, , drop = F]` __or__ `x[, 1, drop = F]` |
+| 数据框  | `x[, 1]` __or__ `x[[1]]`  | `x[, 1, drop = F]` __or__ `x[1]`  |
 
 Preserving is the same for all data types: you get the same type of output as input. Simplifying behaviour varies slightly between different data types, as described below:
 
