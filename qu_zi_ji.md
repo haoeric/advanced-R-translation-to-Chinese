@@ -359,7 +359,7 @@ str(x[NULL])
 | `[[`     | `NA_real_`  | Error       | `NULL`        |
 | `[[`     | `NULL`      | Error       | Error         |
 
-If the input vector is named, then the names of OOB, missing, or `NULL` components will be `"<NA>"`.
+如果输入向量有名字，那么出界索引(OOB)或缺失索引的名字为`"<NA>"`。
 
 ```{r, eval = FALSE, echo = FALSE}
 numeric()[1]
