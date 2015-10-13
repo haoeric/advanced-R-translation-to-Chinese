@@ -339,9 +339,9 @@ x[["a"]]
 
 ### 缺失索引与出界索引
 
-`[` and `[[` differ slightly in their behaviour when the index is out of bounds (OOB), for example, when you try to extract the fifth element of a length four vector, or subset a vector with `NA` or `NULL`: \index{subsetting!with NA \& NULL} \index{subsetting!out of bounds}
+当使用的索引超出范围时，使用`[`和`[[`会表现的有所不同。比如，你试图提取一个长度为四的向量的第五个元素，或则使用`NA`或`NULL`作为索引：
 
-```{r, error = TRUE}
+```r
 x <- 1:4
 str(x[5])
 str(x[NA_real_])
