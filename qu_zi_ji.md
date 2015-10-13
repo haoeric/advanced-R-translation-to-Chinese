@@ -225,7 +225,7 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
 
 1.  自己编写一个对矩阵取对角元素的函数（要和对矩阵`x`使用`diag(x)`的返回值相同）。
 
-1.  What does `df[is.na(df)] <- 0` do? How does it work?
+1.  `df[is.na(df)] <- 0`做了什么操作，怎么解释这个代码？
 
 ## 取子集操作符 {#subsetting-operators}
 
