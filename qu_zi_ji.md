@@ -330,7 +330,7 @@ mtcars$var
 mtcars[[var]]
 ```
 
-There's one important difference between `$` and `[[`. `$` does partial matching:
+`$`和`[[`使用上最大的不同是，`$`采用不完整配对：
 
 ```r
 x <- list(abc = 1)
