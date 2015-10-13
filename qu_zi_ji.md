@@ -273,7 +273,7 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 保留操作对于所有数据类型都是一样的：你得到和输入同样类型的输出。简化操作则对不同的数据类型会有些不同：
 
-*   __原向量__：去除名字
+*   __原向量__：去除名字。
 
     ```r
     x <- c(a = 1, b = 2)
@@ -289,27 +289,25 @@ b[["a"]][["b"]][["c"]][["d"]]
     str(y[[1]])
     ```
 
-*   __因子__: drops any unused levels.
+*   __因子__：去掉多余的水平。
 
-    ```{r}
+    ```r
     z <- factor(c("a", "b"))
     z[1]
     z[1, drop = TRUE]
     ```
 
-*   __矩阵__或__数组__: if any of the dimensions has length 1, 
-    drops that dimension.
+*   __矩阵__或__数组__：去掉长度为一的维度。
 
-    ```{r}
+    ```r
     a <- matrix(1:4, nrow = 2)
     a[1, , drop = FALSE]
     a[1, ]
     ```
 
-*   __数据框__: if output is a single column, returns a vector instead of 
-    a data frame.
+*   __数据框__：若返回值是单列，则返回一个向量而不是数据框。 
 
-    ```{r}
+    ```r
     df <- data.frame(a = 1:2, b = 1:2)
     str(df[1])
     str(df[[1]])
