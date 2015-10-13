@@ -317,7 +317,7 @@ b[["a"]][["b"]][["c"]][["d"]]
 
 ### `$`
 
-`$` is a shorthand operator, where `x$y` is equivalent to `x[["y", exact = FALSE]]`.  It's often used to access variables in a data frame, as in `mtcars$cyl` or `diamonds$carat`. \indexc{\$} \indexc{[[}
+`$`是一个简化操作符，`x$y`等同于`x[["y", exact = FALSE]]`。多用于对数据框取子集，比如`mtcars$cyl`和`diamonds$carat`。
 
 One common mistake with `$` is to try and use it when you have the name of a column stored in a variable:
 
