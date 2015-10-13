@@ -234,9 +234,8 @@ S3对象是由原子向量，数组和列表构成的，因此你可以使用上
 
 对列表使用`[`返回值始终是一个列表，然而使用`[[`则返回列表中的元素。因此，提取列表中的元素时要使用`[[`:
 
->  "If list `x` is a train carrying objects, then `x[[5]]` is
-> the object in car 5; `x[4:6]` is a train of cars 4-6." 
->
+> “如果列表`x`是一个满载货物的火车，`x[[5]]`表示在第五节车厢
+> 中的货物，而`x[4:6]`则表示由四，五，六号车厢组成的小火车。"
 > --- @RLangTip
 
 Because it can return only a single value, you must use `[[` with either a single positive integer or a string: \index{subsetting!lists} \index{lists!subsetting}
