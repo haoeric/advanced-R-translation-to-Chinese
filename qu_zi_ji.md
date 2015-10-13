@@ -338,6 +338,7 @@ x$a
 x[["a"]]
 ```
 
+你可以修改全域设置，将`warnPartialMatchDollar`设为`TRUE`来避免这一
 If you want to avoid this behaviour you can set the global option `warnPartialMatchDollar` to `TRUE`. Use with caution: it may affect behaviour in other code you have loaded (e.g., from a package).
 
 ### 缺失索引与出界索引
