@@ -271,6 +271,7 @@ b[["a"]][["b"]][["c"]][["d"]]
 | 数组    | `x[1, ]` __or__ `x[, 1]`  | `x[1, , drop = F]` __or__ `x[, 1, drop = F]` |
 | 数据框  | `x[, 1]` __or__ `x[[1]]`  | `x[, 1, drop = F]` __or__ `x[1]`             |
 
+保留操作对于所有数据类型都是一样的：你得到和输入同样类型的输出。简化操作则对不同的数据类型会有些不同：
 Preserving is the same for all data types: you get the same type of output as input. Simplifying behaviour varies slightly between different data types, as described below:
 
 *   __Atomic vector__: removes names.
