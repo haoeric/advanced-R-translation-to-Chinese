@@ -348,7 +348,7 @@ str(x[NA_real_])
 str(x[NULL])
 ```
 
-The following table summarises the results of subsetting atomic vectors and lists with `[` and `[[` and different types of OOB value.
+下面的表格归纳了在对向量或列表使用`[`和`[[`时，当出现出界索引时结果的差异：
 
 | Operator | Index       | Atomic      | List          |
 |----------|-------------|-------------|---------------|
