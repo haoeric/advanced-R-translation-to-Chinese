@@ -377,7 +377,7 @@ list()[[NA_real_]]
 list()[[NULL]]
 ```
 
-### Exercises
+### 练习
 
 1.  Given a linear model, e.g., `mod <- lm(mpg ~ wt, data = mtcars)`, extract
     the residual degrees of freedom. Extract the R squared from the model
