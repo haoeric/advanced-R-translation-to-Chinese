@@ -386,29 +386,27 @@ list()[[NULL]]
 ## 取子集与分派 {#subassignment}
 
 所有的取子集操作都可以和分派结合起来对输入的向量进行选择性地修改。
-All subsetting operators can be combined with assignment to modify selected values of the input vector. \index{subsetting!subassignment} \index{assignment!subassignment}
 
 ```r
 x <- 1:5
 x[c(1, 2)] <- 2:3
 x
 
-# The length of the LHS needs to match the RHS
+# LHS的长度必须和RHS一致
 x[-1] <- 4:1
 x
 
-# Note that there's no checking for duplicate indices
+# 注意：重复的索引不会被除掉，会覆盖前面的赋值
 x[c(1, 1)] <- 2:3
 x
 
-# You can't combine integer indices with NA
+# 整型索引不能和NA一同使用
 x[c(1, NA)] <- c(1, 2)
-# But you can combine logical indices with NA
-# (where they're treated as false).
+# 但是NA可以和逻辑索引一同使用 (这时，NA会被视为false)
 x[c(T, F, NA)] <- 1
 x
 
-# This is mostly useful when conditionally modifying vectors
+# 这对修改向量中修改符合某种条件的元素很有
 df <- data.frame(a = c(1, 10, NA))
 df$a[df$a < 5] <- 0
 df$a
