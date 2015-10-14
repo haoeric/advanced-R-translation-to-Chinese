@@ -385,6 +385,7 @@ list()[[NULL]]
 
 ## 取子集与分派 {#subassignment}
 
+所有的取子集操作都可以和分派结合起来对输入的向量进行选择性地修改。
 All subsetting operators can be combined with assignment to modify selected values of the input vector. \index{subsetting!subassignment} \index{assignment!subassignment}
 
 ```r
