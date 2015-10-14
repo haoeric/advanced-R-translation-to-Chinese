@@ -8,9 +8,9 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
 
 * 对不同数据类型（比如向量，列表，因子，矩阵和数据框）取子集结果的不同。
 
-* 取子集和分派的结合使用。
+* 取子集和任务分派的结合使用。
 
-这章将帮助你一步一步掌握R的取子集操作。首先我们从最简单的取子集（即使用`[`对原子向量取子集）开始讲解，然后慢慢展开，学习对较复杂的数据结构比如数组和列表取子集以及使用其他取子集操作符`[[`和`$`。接下来会讲解如何结合取子集和分派来修改对象的内容。最后我们来看看一些有用的取子集应用实例。
+这章将帮助你一步一步掌握R的取子集操作。首先我们从最简单的取子集（即使用`[`对原子向量取子集）开始讲解，然后慢慢展开，学习对较复杂的数据结构比如数组和列表取子集以及使用其他取子集操作符`[[`和`$`。接下来会讲解如何结合取子集和任务分派来修改对象的内容。最后我们来看看一些有用的取子集应用实例。
 
 取子集是`str()`函数的补充。`str()`函数帮助你了解对象的数据结构，取子集让你从对象中提取感兴趣的数据片段。
 
@@ -34,7 +34,7 @@ R的取子集操作非常快捷灵活。掌握R中的取子集能让你用简洁
   
 * [取子集操作符](#subsetting-operators) 介绍另外两种取子集操作符`[[`和`$`，着重介绍简化与保留的原则。
   
-* In [取子集和分派](#subassignment) you'll learn the
+* In [取子集和任务分派](#subassignment) you'll learn the
   art of subassignment, combining subsetting and assignment to modify parts 
   of an object.
   
@@ -100,7 +100,7 @@ x <- c(2.1, 4.2, 3.3, 5.4) ＃注意：小数点后面的数实际标明了向�
     x[c(TRUE, TRUE, NA, FALSE)]
     ```
 
-*   __空索引__ 返回原子向量。这对向量取子集没有什么用处，可是对于矩阵，数据框和数组却非常有用。并且还可以和分派联合使用。
+*   __空索引__ 返回原子向量。这对向量取子集没有什么用处，可是对于矩阵，数据框和数组却非常有用。并且还可以和任务分派联合使用。
 
     ```r
     x[]
@@ -383,9 +383,9 @@ list()[[NULL]]
 
 <!-- FIXME: more examples -->
 
-## 取子集与分派 {#subassignment}
+## 取子集与任务分派 {#subassignment}
 
-所有的取子集操作都可以和分派结合起来对输入的向量进行选择性地修改。
+所有的取子集操作都可以和任务分派结合起来对输入的向量进行选择性地修改。
 
 ```r
 x <- 1:5
@@ -406,22 +406,22 @@ x[c(1, NA)] <- c(1, 2)
 x[c(T, F, NA)] <- 1
 x
 
-# 这对修改向量中修改符合某种条件的元素很有
+# 这对修改向量中修改符合某种条件的元素很有用处
 df <- data.frame(a = c(1, 10, NA))
 df$a[df$a < 5] <- 0
 df$a
 ```
 
-Subsetting with nothing can be useful in conjunction with assignment because it will preserve the original object class and structure. Compare the following two expressions. In the first, `mtcars` will remain as a data frame. In the second, `mtcars` will become a list.
+使用空索引取子集搭配任务分派能保有原对象的类型和结构。比较如下两行代码。第一行中`mtcars`将保持原类型为数据框，而第二行中`mtcars`将成为一个列表。
 
-```{r, eval = FALSE}
+```r
 mtcars[] <- lapply(mtcars, as.integer)
 mtcars <- lapply(mtcars, as.integer)
 ```
 
-With lists, you can use subsetting + assignment + `NULL` to remove components from a list. To add a literal `NULL` to a list, use `[` and `list(NULL)`: \index{lists!removing an element}
+对于列表，可以使用取子集＋任务分派＋`NULL`来去除向量中的某个特定元素。如果要添加一个`NULL`到一个列表，则可以使用`[`和`list(NULL)`：
 
-```{r}
+```r
 x <- list(a = 1, b = 2)
 x[["b"]] <- NULL
 str(x)
