@@ -379,9 +379,7 @@ list()[[NULL]]
 
 ### 练习
 
-1.  Given a linear model, e.g., `mod <- lm(mpg ~ wt, data = mtcars)`, extract
-    the residual degrees of freedom. Extract the R squared from the model
-    summary (`summary(mod)`)
+1.  比如一个线性模型`mod <- lm(mpg ~ wt, data = mtcars)`，如何对它提取模型中的残余自由度，如何提取`summary(mod)`中的R平方值。
 
 <!-- FIXME: more examples -->
 
