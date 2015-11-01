@@ -454,10 +454,9 @@ c(m = "Known", f = "Known", u = "Unknown")[x]
 
 ### 手动匹配和融合 (整形取子集) {#matching-merging}
 
+你可能有一个更复杂的多列的查询表。比如我们有一个表示成绩的向量，和一个描述它的特性表：
 
-You may have a more complicated lookup table which has multiple columns of information. Suppose we have a vector of integer grades, and a table that describes their properties: \index{matching \& merging}
-
-```{r}
+```r
 grades <- c(1, 2, 2, 3, 1)
 
 info <- data.frame(
@@ -467,21 +466,21 @@ info <- data.frame(
 )
 ```
 
-We want to duplicate the info table so that we have a row for each value in `grades`. We can do this in two ways, either using `match()` and integer subsetting, or `rownames()` and character subsetting: \indexc{match()}
+我们想要得到每个成绩在特性表中对应的信息。我们有两种途径来获得，一种是使用`match()`做整形取子集，另外一种是使用`rownames()`做字符串取子集： 
 
-```{r}
+```r
 grades
 
-# Using match
+# 使用 match
 id <- match(grades, info$grade)
 info[id, ]
 
-# Using rownames
+# 使用 rownames
 rownames(info) <- info$grade
 info[as.character(grades), ]
 ```
 
-If you have multiple columns to match on, you'll need to first collapse them to a single column (with `interaction()`, `paste()`, or `plyr::id()`).  You can also use `merge()` or `plyr::join()`, which do the same thing for you --- read the source code to see how. \indexc{merge()}
+如果你有多列需要匹配，那么你需要先使用`interaction()`， `paste()`，或者 `plyr::id()`将它们转换成单列。你也可以使用`merge()`或`plyr::join()`来做同样的事。请查看源代码来学习如何实现。
 
 ### Random samples/bootstrap (integer subsetting)
 
