@@ -435,23 +435,25 @@ str(y)
 
 上面介绍的取子集的基础知识能够被应用到很多的场景中。以下我们会介绍其中最重要的几个运用。有些特定的运用虽然有对应的专门的函数（比如，`subset()`, `merge()`, `plyr::arrange()`），但是了解这些函数是如何通过基础取子集操作来实现的对我们非常有帮助。这让我们能够应对那些没有专门函数来处理的新环境。
 
-### Lookup tables (character subsetting) {#lookup-tables}
+### 查寻表 (字符串取子集) {#lookup-tables}
 
-Character matching provides a powerful way to make lookup tables. Say you want to convert abbreviations: \index{lookup tables}
+字符匹配为制作查询表提供了一个强大的机制。比如你想转换一些缩写：
 
-```{r}
+```r
 x <- c("m", "f", "u", "f", "f", "m", "m")
 lookup <- c(m = "Male", f = "Female", u = NA)
 lookup[x]
 unname(lookup[x])
 
-# Or with fewer output values
+# 或者更简单的输出
 c(m = "Known", f = "Known", u = "Unknown")[x]
 ```
 
-If you don't want names in the result, use `unname()` to remove them.
+如果不想在结果汇总出现名字，你可以使用`unname()`来把它们去掉。
 
-### Matching and merging by hand (integer subsetting) {#matching-merging}
+
+### 手动匹配和融合 (整形取子集) {#matching-merging}
+
 
 You may have a more complicated lookup table which has multiple columns of information. Suppose we have a vector of integer grades, and a table that describes their properties: \index{matching \& merging}
 
