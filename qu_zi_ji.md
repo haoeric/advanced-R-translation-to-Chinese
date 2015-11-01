@@ -433,7 +433,7 @@ str(y)
 
 ## 实例运用 {#applications}
 
-The basic principles described above give rise to a wide variety of useful applications. Some of the most important are described below. Many of these basic techniques are wrapped up into more concise functions (e.g., `subset()`, `merge()`, `plyr::arrange()`), but it is useful to understand how they are implemented with basic subsetting. This will allow you to adapt to new situations that are not dealt with by existing functions.
+上面介绍的取子集的基础知识能够被应用到很多的场景中。以下我们会介绍其中最重要的几个运用。有些特定的运用虽然有对应的专门的函数（比如，`subset()`, `merge()`, `plyr::arrange()`），但是了解这些函数是如何通过基础取子集操作来实现的对我们非常有帮助。这让我们能够应对那些没有专门函数来处理的新环境。
 
 ### Lookup tables (character subsetting) {#lookup-tables}
 
