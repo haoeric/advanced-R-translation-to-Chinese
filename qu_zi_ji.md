@@ -469,8 +469,6 @@ info <- data.frame(
 我们想要得到每个成绩在特性表中对应的信息。我们有两种途径来获得，一种是使用`match()`做整形取子集，另外一种是使用`rownames()`做字符串取子集： 
 
 ```r
-grades
-
 # 使用 match
 id <- match(grades, info$grade)
 info[id, ]
@@ -480,7 +478,7 @@ rownames(info) <- info$grade
 info[as.character(grades), ]
 ```
 
-如果你有多列需要匹配，那么你需要先使用`interaction()`， `paste()`，或者 `plyr::id()`将它们转换成单列。你也可以使用`merge()`或`plyr::join()`来做同样的事。请查看源代码来学习如何实现。
+如果你有多列需要匹配，那么你需要先使用`interaction()`， `paste()`，或者`plyr::id()`将它们转换成单列。你也可以使用`merge()`或`plyr::join()`来做同样的事。请查看对应函数的源代码来学习如何实现。
 
 ### Random samples/bootstrap (integer subsetting)
 
