@@ -499,11 +499,11 @@ df[sample(nrow(df), 6, rep = T), ]
 ```
 设置`sample()`函数的参数来调整取样的个数，以及是否重复取样。
 
-### Ordering (integer subsetting)
+### 排序 (整形取子集)
 
-`order()` takes a vector as input and returns an integer vector describing how the subsetted vector should be ordered: \indexc{order()} \index{sorting}
+`order()`函数的输入是一个向量，返回一个存储该向量排列顺序的整型向量。
 
-```{r}
+```r
 x <- c("b", "c", "a")
 order(x)
 x[order(x)]
