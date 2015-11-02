@@ -487,18 +487,17 @@ info[as.character(grades), ]
 ```r
 df <- data.frame(x = rep(1:3, each = 2), y = 6:1, z = letters[1:6])
 
-# Set seed for reproducibility
+# 为可重复性操作设置种子
 set.seed(10)
 
 # 随机重排
 df[sample(nrow(df)), ]
 # 随机取3排
 df[sample(nrow(df), 3), ]
-# 取6个自助
+# 取6个自助样本
 df[sample(nrow(df), 6, rep = T), ]
 ```
-
-The arguments of `sample()` control the number of samples to extract, and whether sampling is performed with or without replacement.
+设置`sample()`函数的参数来调整取样的个数，以及是否重复取样。
 
 ### Ordering (integer subsetting)
 
