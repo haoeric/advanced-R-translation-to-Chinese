@@ -480,21 +480,21 @@ info[as.character(grades), ]
 
 如果你有多列需要匹配，那么你需要先使用`interaction()`，`paste()`或者`plyr::id()`将它们转换成单列。你也可以使用`merge()`或`plyr::join()`来做同样的事。请查看对应函数的源代码来学习如何实现。
 
-### Random samples/bootstrap (integer subsetting)
+### 随机取样/自助法 (整型取子集)
 
-You can use integer indices to perform random sampling or bootstrapping of a vector or data frame. `sample()` generates a vector of indices, then subsetting to access the values: \indexc{sample()} \index{sampling} \index{random sampling} \index{bootstrapping}
+你可以使用整形索引来对一个向量或者数据框进行随机取样和自助取样。首先使用`sample()`函数生成一个随机索引向量，然后对对象取子集。 
 
-```{r}
+```r
 df <- data.frame(x = rep(1:3, each = 2), y = 6:1, z = letters[1:6])
 
 # Set seed for reproducibility
 set.seed(10)
 
-# Randomly reorder
+# 随机重排
 df[sample(nrow(df)), ]
-# Select 3 random rows
+# 随机取3排
 df[sample(nrow(df), 3), ]
-# Select 6 bootstrap replicates
+# 取6个自助
 df[sample(nrow(df), 6, rep = T), ]
 ```
 
