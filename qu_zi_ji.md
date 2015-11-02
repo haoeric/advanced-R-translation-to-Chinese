@@ -509,7 +509,7 @@ order(x)
 x[order(x)]
 ```
 
-To break ties, you can supply additional variables to `order()`, and you can change from ascending to descending order using `decreasing = TRUE`.  By default, any missing values will be put at the end of the vector; however, you can remove them with `na.last = NA` or put at the front with `na.last = FALSE`.
+可以给`order()`函数提供额外参数来重排并列值的顺序。可以使用`decreasing = TRUE`将返回结果变成降序排列。默认情况下，缺失值会被排在最后；可以使用`na.last = NA`来去除它们，或者使用`na.last = FALSE`将它们放在最前面。
 
 For two or more dimensions, `order()` and integer subsetting makes it easy to order either the rows or columns of an object:
 
