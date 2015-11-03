@@ -637,9 +637,7 @@ setdiff(union(x2, y2), intersect(x2, y2))
 
 ## 参考答案 {#subsetting-answers}
 
-1.  Positive integers select elements at specific positions, negative integers
-    drop elements; logical vectors keep elements at positions corresponding to
-    `TRUE`; character vectors select elements with matching names.
+1.  正整数索引提取特定位置的元素，而负整数索引去除特定位置的元素；逻辑型索引保留对应位置为`TRUE`的元素；字符串索引筛选和名字配对的元素。
    
 1.  `[` selects sub-lists. It always returns a list; if you use it with a
     single positive integer, it returns a list of length one. `[[` selects 
