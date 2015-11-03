@@ -570,7 +570,7 @@ mtcars[mtcars$gear == 5 & mtcars$cyl == 4, ]
 * `!(X & Y)` 等同于 `!X | !Y`
 * `!(X | Y)` 等同于 `!X & !Y`
 
-比如 `!(X & !(Y | Z))` 可以简化成 `!X | !!(Y|Z)`，更进一步成`!X | Y | Z`.
+比如 `!(X & !(Y | Z))` 可以简化成 `!X | !!(Y|Z)`，更进一步成`!X | Y | Z`。
 
 `subset()` is a specialised shorthand function for subsetting data frames, and saves some typing because you don't need to repeat the name of the data frame. You'll learn how it works in [non-standard evaluation](#nse). \indexc{subset()}
 
