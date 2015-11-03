@@ -558,19 +558,19 @@ df[setdiff(names(df), "z")]
 
 ### 有条件的行筛选 (逻辑型取子集)
 
-Because it allows you to easily combine conditions from multiple columns, logical subsetting is probably the most commonly used technique for extracting rows out of a data frame. \index{subsetting!with logical vectors}
+因为我们能很容易地整合多列的条件判断，所以逻辑型取子集应该是对数据框进行行筛选的最常用的方法。
 
-```{r}
+```r
 mtcars[mtcars$gear == 5, ]
 mtcars[mtcars$gear == 5 & mtcars$cyl == 4, ]
 ```
 
-Remember to use the vector boolean operators `&` and `|`, not the short-circuiting scalar operators `&&` and `||` which are more useful inside if statements. Don't forget [De Morgan's laws][demorgans], which can be useful to simplify negations:
+注意使用向量型逻辑运算符`&`和`|`， 而不是缩短的标量型逻辑运算符`&&`和`||`。`&&`和`||`在if条件判断比较有用，别忘了[德摩根定律][demorgans], which can be useful to simplify negations:
 
-* `!(X & Y)` is the same as `!X | !Y`
-* `!(X | Y)` is the same as `!X & !Y`
+* `!(X & Y)` 等同于 `!X | !Y`
+* `!(X | Y)` 等同于 `!X & !Y`
 
-For example, `!(X & !(Y | Z))` simplifies to `!X | !!(Y|Z)`, and then to `!X | Y | Z`.
+比如 `!(X & !(Y | Z))` 可以简化成 `!X | !!(Y|Z)`，更进一步成`!X | Y | Z`.
 
 `subset()` is a specialised shorthand function for subsetting data frames, and saves some typing because you don't need to repeat the name of the data frame. You'll learn how it works in [non-standard evaluation](#nse). \indexc{subset()}
 
