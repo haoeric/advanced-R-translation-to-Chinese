@@ -572,7 +572,7 @@ mtcars[mtcars$gear == 5 & mtcars$cyl == 4, ]
 
 比如 `!(X & !(Y | Z))` 可以简化成 `!X | !!(Y|Z)`，更进一步成`!X | Y | Z`。
 
-`subset()` is a specialised shorthand function for subsetting data frames, and saves some typing because you don't need to repeat the name of the data frame. You'll learn how it works in [non-standard evaluation](#nse). \indexc{subset()}
+`subset()`是专门用来对数据框取子集的速记函数。使用`subset()`可以免掉重复输入数据框的名字从而节省代码。在[非标准评估](#nse)一章，你会学习`subset()的工作原理。
 
 ```{r}
 subset(mtcars, gear == 5)
