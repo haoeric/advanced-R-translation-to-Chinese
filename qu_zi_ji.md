@@ -536,14 +536,15 @@ df[rep(1:nrow(df), df$n), ]
 
 ### 去除数据框中的某列 (字符串取子集)
 
-There are two ways to remove columns from a data frame. You can set individual columns to NULL: \index{data frames!remove columns}
+有两种方法来去除数据框中的某列。一种是将该列设为NULL：
 
-```{r}
+```r
 df <- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
 df$z <- NULL
 ```
 
-Or you can subset to return only the columns you want:
+另外一种是生成只包含你想要的列的新数据框：
+
 
 ```{r}
 df <- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
