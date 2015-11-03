@@ -587,7 +587,7 @@ subset(mtcars, gear == 5 & cyl == 4)
 
 * 你有很多的`FALSE`却比较少的`TRUE`；使用集合运算更快更节省内存。
 
-`which()` allows you to convert a boolean representation to an integer representation. There's no reverse operation in base R but we can easily create one: \indexc{which()}
+`which()`可以帮助你将逻辑型转换为整形表示。在基础R中没有这样的逆操作，但是我们可以很容易的编写一个：
 
 ```{r}
 x <- sample(10) < 4
