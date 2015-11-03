@@ -565,7 +565,7 @@ mtcars[mtcars$gear == 5, ]
 mtcars[mtcars$gear == 5 & mtcars$cyl == 4, ]
 ```
 
-注意使用向量型逻辑运算符`&`和`|`， 而不是缩短的标量型逻辑运算符`&&`和`||`。`&&`和`||`在if条件判断比较有用，别忘了[德摩根定律][demorgans], which can be useful to simplify negations:
+注意使用向量型逻辑运算符`&`和`|`， 而不是缩短的标量型逻辑运算符`&&`和`||`，`&&`和`||`在`if`条件判断中比较有用。灵活运用[德摩根定律][demorgans]可以大大简化否定的逻辑操作。
 
 * `!(X & Y)` 等同于 `!X | !Y`
 * `!(X | Y)` 等同于 `!X & !Y`
