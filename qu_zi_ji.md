@@ -534,7 +534,7 @@ rep(1:nrow(df), df$n)
 df[rep(1:nrow(df), df$n), ]
 ```
 
-### Removing columns from data frames (character subsetting)
+### 去除数据框中的某列 (字符串取子集)
 
 There are two ways to remove columns from a data frame. You can set individual columns to NULL: \index{data frames!remove columns}
 
