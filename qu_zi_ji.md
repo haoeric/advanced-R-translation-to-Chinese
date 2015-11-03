@@ -550,10 +550,9 @@ df$z <- NULL
 df <- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
 df[c("x", "y")]
 ```
+如果你知道你不想要的列信息，使用`setdiff`筛选出你想要保留的列：
 
-If you know the columns you don't want, use set operations to work out which colums to keep:
-
-```{r}
+```r
 df[setdiff(names(df), "z")]
 ```
 
