@@ -641,9 +641,7 @@ setdiff(union(x2, y2), intersect(x2, y2))
    
 1.  `[`取子列表，并且总是返回列表；如果使用单个整形索引，它将返回长度为1的一个列表。`[[`提取列表中的某个元素。`$`是一个方便的速记符，`x$y`等同于`x[["y"]]`。
 
-1.  Use `drop = FALSE` if you are subsetting a matrix, array, or data frame 
-    and you want to preserve the original dimensions. You should almost 
-    always use it when subsetting inside a function.
+1.  在对一个矩阵、数组或则数据框取子集时，如果你想要保留原有的数据维度，使用`drop = FALSE`。在某个函数中取子集，最好总是设置`drop = FALSE`。
    
 1.  If `x` is a matrix, `x[] <- 0` will replace every element with 0, 
     keeping the same number of rows and columns. `x <- 0` completely 
