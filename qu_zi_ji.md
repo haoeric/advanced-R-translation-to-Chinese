@@ -627,7 +627,7 @@ setdiff(union(x2, y2), intersect(x2, y2))
 
 刚开始学习取子集的一个常见错误是使用`x[which(y)]`而不是`x[y]`。这里的`which()`没有什么意义：它将逻辑型转换为整形索引，可是结果确实完全一样的。同时注意`x[-which(y)]`__不__等同于`x[!y]`：当`y`全是FALSE时，`which(y)`会返回`integer(0)`，那么`-integer(0)`依然是`integer(0)`，因此你会得到空值而不是所有的值。因此，除非你确实需要（比如提取第一个或最后一个`TRUE`值），尽量避免将逻辑型取子集转换为整型取子集。
 
-### Exercises
+### 练习
 
 1.  How would you randomly permute the columns of a data frame? (This is an
     important technique in random forests.) Can you simultaneously permute 
