@@ -511,10 +511,10 @@ x[order(x)]
 
 可以给`order()`函数提供额外参数来重排并列值的顺序。可以使用`decreasing = TRUE`将返回结果变成降序排列。默认情况下，缺失值会被排在最后；可以使用`na.last = NA`来去除它们，或者使用`na.last = FALSE`将它们放在最前面。
 
-For two or more dimensions, `order()` and integer subsetting makes it easy to order either the rows or columns of an object:
+当目标对象是二维或更高维时，可以使用`order()`和整形索引来简单地对行或者列排序：
 
-```{r}
-# Randomly reorder df
+```r
+# 随机重排df
 df2 <- df[sample(nrow(df)), 3:1]
 df2
 
@@ -522,13 +522,13 @@ df2[order(df2$x), ]
 df2[, order(names(df2))]
 ```
 
-More concise, but less flexible, functions are available for sorting vectors, `sort()`, and data frames, `plyr::arrange()`. \indexc{sort()}
+使用`sort()`可以对向量进行排序，`plyr::arrange()`则可以对数据框排序。
 
-### Expanding aggregated counts (integer subsetting)
+### 展开汇总计数 (整型取子集)
 
-Sometimes you get a data frame where identical rows have been collapsed into one and a count column has been added. `rep()` and integer subsetting make it easy to uncollapse the data by subsetting with a repeated row index:
+有时候你的数据框中的重复行可能被汇总为一行，同时添加一列来标记重复的次数。可以使用`rep()`生成有重复的行整形索引来展开汇总计数：
 
-```{r}
+```r
 df <- data.frame(x = c(2, 4, 1), y = c(9, 11, 6), n = c(3, 5, 1))
 rep(1:nrow(df), df$n)
 df[rep(1:nrow(df), df$n), ]
