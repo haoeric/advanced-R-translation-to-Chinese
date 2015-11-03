@@ -645,7 +645,7 @@ setdiff(union(x2, y2), intersect(x2, y2))
    
 1.  如果`x`是一个矩阵，`x[] <- 0`会将每一个元素替换为0，保留原有的行数和列数。`x <- 0`则将整个矩阵替换为0。
     
-1.  A named character vector can act as a simple lookup table: 
+1.  一个带有名字的向量可以被用来作为一个简单的查询表：
     `c(x = 1, y = 2, z = 3)[c("y", "z", "x")]`
 
 [demorgans]: http://en.wikipedia.org/wiki/De_Morgan's_laws
