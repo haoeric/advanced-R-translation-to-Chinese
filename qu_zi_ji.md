@@ -581,6 +581,7 @@ subset(mtcars, gear == 5 & cyl == 4)
 
 ### 逻辑运算 vs. 集合运算 (逻辑型 & 整形取子集)
 
+认识逻辑运算（逻辑型取子集）和集合运算（整型取子集）本质上的相同点非常有用，
 It's useful to be aware of the natural equivalence between set operations (integer subsetting) and boolean algebra (logical subsetting). Using set operations is more effective when: \index{Boolean algebra} \index{set algebra}
 
 * You want to find the first (or last) `TRUE`.
