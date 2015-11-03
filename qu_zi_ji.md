@@ -639,10 +639,7 @@ setdiff(union(x2, y2), intersect(x2, y2))
 
 1.  正整数索引提取特定位置的元素，而负整数索引去除特定位置的元素；逻辑型索引保留对应位置为`TRUE`的元素；字符串索引筛选和名字配对的元素。
    
-1.  `[` selects sub-lists. It always returns a list; if you use it with a
-    single positive integer, it returns a list of length one. `[[` selects 
-    an element within a list. `$` is a convenient shorthand: `x$y` is
-    equivalent to `x[["y"]]`.
+1.  `[`取子列表，并且总是返回列表；如果使用单个整形索引，它将返回长度为1的一个列表。`[[`提取列表中的某个元素。`$`是一个方便的速记符，`x$y`等同于`x[["y"]]`。
 
 1.  Use `drop = FALSE` if you are subsetting a matrix, array, or data frame 
     and you want to preserve the original dimensions. You should almost 
