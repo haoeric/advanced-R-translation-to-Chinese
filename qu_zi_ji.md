@@ -581,13 +581,11 @@ subset(mtcars, gear == 5 & cyl == 4)
 
 ### 逻辑运算 vs. 集合运算 (逻辑型 & 整形取子集)
 
-认识逻辑运算（逻辑型取子集）和集合运算（整型取子集）本质上的相同点非常有用，
-It's useful to be aware of the natural equivalence between set operations (integer subsetting) and boolean algebra (logical subsetting). Using set operations is more effective when: \index{Boolean algebra} \index{set algebra}
+认识逻辑运算（逻辑型取子集）和集合运算（整型取子集）本质上的相同点非常有用，而使用集合运算更为高效：
 
-* You want to find the first (or last) `TRUE`.
+* 你想知道第一个（或最后一个）`TRUE`。
 
-* You have very few `TRUE`s and very many `FALSE`s; a set representation 
-  may be faster and require less storage.
+* 你有很多的`FALSE`却比较少的`TRUE`；使用集合运算更快更节省内存。
 
 `which()` allows you to convert a boolean representation to an integer representation. There's no reverse operation in base R but we can easily create one: \indexc{which()}
 
