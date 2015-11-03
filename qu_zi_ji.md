@@ -600,9 +600,9 @@ unwhich <- function(x, n) {
 unwhich(which(x), 10)
 ```
 
-Let's create two logical vectors and their integer equivalents and then explore the relationship between boolean and set operations.
+我们创建两个逻辑型向量和对应的整型向量来探索一下逻辑运算和集合运算之间的关系。
 
-```{r}
+```r
 (x1 <- 1:10 %% 2 == 0)
 (x2 <- which(x1))
 (y1 <- 1:10 %% 5 == 0)
