@@ -629,13 +629,11 @@ setdiff(union(x2, y2), intersect(x2, y2))
 
 ### 练习
 
-1.  你如何随机的打乱一个数据框的列？（这在随机深林方法中是非常重要的一步）你又如何同时将数据框的行和列打乱？ 
+1.  如何随机的打乱一个数据框的列？（这在随机深林方法中是非常重要的一步）你又如何同时将数据框的行和列打乱？ 
 
-1.  How would you select a random sample of `m` rows from a data frame? 
-    What if the sample had to be contiguous (i.e., with an initial row, a 
-    final row, and every row in between)?
+1.  如何从一个数据框中随机的提取一个`m`行的子集？
     
-1.  How could you put the columns in a data frame in alphabetical order?
+1.  如何使数据框的列按字符顺序排列？
 
 ## 参考答案 {#subsetting-answers}
 
