@@ -556,7 +556,7 @@ df[c("x", "y")]
 df[setdiff(names(df), "z")]
 ```
 
-### Selecting rows based on a condition (logical subsetting)
+### 有条件的行筛选 (逻辑型取子集)
 
 Because it allows you to easily combine conditions from multiple columns, logical subsetting is probably the most commonly used technique for extracting rows out of a data frame. \index{subsetting!with logical vectors}
 
