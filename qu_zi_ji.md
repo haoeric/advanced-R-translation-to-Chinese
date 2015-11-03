@@ -625,7 +625,9 @@ xor(x1, y1)
 setdiff(union(x2, y2), intersect(x2, y2))
 ```
 
-When first learning subsetting, a common mistake is to use `x[which(y)]` instead of `x[y]`.  Here the `which()` achieves nothing: it switches from logical to integer subsetting but the result will be exactly the same. Also beware that `x[-which(y)]` is __not__ equivalent to `x[!y]`: if `y` is all FALSE, `which(y)` will be `integer(0)` and `-integer(0)` is still `integer(0)`, so you'll get no values, instead of all values. In general, avoid switching from logical to integer subsetting unless you want, for example, the first or last `TRUE` value.
+刚开始学习取子集的一个常见错误是使用`x[which(y)]`而不是`x[y]`。这里的`which()`没有什么意义：它将逻辑型转换为整形索引，可是结果确实完全一样的。同时注意`x[-which(y)]`__不__等同于`x[!y]`：
+
+if `y` is all FALSE, `which(y)` will be `integer(0)` and `-integer(0)` is still `integer(0)`, so you'll get no values, instead of all values. In general, avoid switching from logical to integer subsetting unless you want, for example, the first or last `TRUE` value.
 
 ### Exercises
 
