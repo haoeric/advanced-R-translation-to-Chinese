@@ -629,9 +629,7 @@ setdiff(union(x2, y2), intersect(x2, y2))
 
 ### 练习
 
-1.  How would you randomly permute the columns of a data frame? (This is an
-    important technique in random forests.) Can you simultaneously permute 
-    the rows and columns in one step?
+1.  你如何随机的打乱一个数据框的列？（这在随机深林方法中是非常重要的一步）你又如何同时将数据框的行和列打乱？ 
 
 1.  How would you select a random sample of `m` rows from a data frame? 
     What if the sample had to be contiguous (i.e., with an initial row, a 
