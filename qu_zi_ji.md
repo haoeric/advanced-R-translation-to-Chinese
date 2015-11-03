@@ -579,7 +579,7 @@ subset(mtcars, gear == 5)
 subset(mtcars, gear == 5 & cyl == 4)
 ```
 
-### Boolean algebra vs. sets (logical & integer subsetting)
+### 逻辑运算 vs. 集合运算 (逻辑型 & 整形取子集)
 
 It's useful to be aware of the natural equivalence between set operations (integer subsetting) and boolean algebra (logical subsetting). Using set operations is more effective when: \index{Boolean algebra} \index{set algebra}
 
